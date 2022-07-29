@@ -69,9 +69,9 @@
                     <div class="col-3 col-md-4 pe-2 pe-md-0">
                       <div class="ratio_115-80 image-wrapper">
                         <a href="mypost1">
-                          <img class="img-fluid lazy" width="100%"
+                          <nuxt-img class="img-fluid lazy" width="100%"
                         height="100%" 
-                 src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img6.jpg" alt="im4">
+                 src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img6.jpg" alt="im4"/>
                         </a>
                       </div>
                     </div>

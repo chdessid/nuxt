@@ -18,12 +18,12 @@
             </a>
             <!-- Mobile logo -->
             <a href="/">
-              <NuxtImg
+              <nuxt-img
                class="mobile-logo img-fluid d-lg-none mx-auto" 
                src="jaridaa_white.png" 
                alt="Jaridaa Mobile Logo"
-                width="100%"
-                 height="100%"/>
+               width="100%"
+               height="100%"/>
             </a>
             <!--Right Toggle Button-->
             <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
