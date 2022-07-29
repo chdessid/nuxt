@@ -99,9 +99,9 @@
                 <a class="navbar-brand" href="/">
                   <nuxt-img class="img-fluid" 
                   src="jaridaa_logo.png" 
-                  alt="Jaridaa Logo"
-                   width="100%"
-                 height="100%"
+                  alt="./Jaridaa Logo"
+                  width="100%"
+                  height="100%"
                   />
                 </a>
               </div>
