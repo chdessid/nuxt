@@ -14841,7 +14841,7 @@ p {
 }
 
 .bg-footer {
-  background-image: url("@/assets/img/bg-footer.jpg");
+  background-image: url("@/assets/img/jaridaa-footer.jpg");
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
@@ -16183,32 +16183,7 @@ p {
     line-height: 2.25rem;
   }
 }
-/*------------------------------------
-	Back to top
-------------------------------------*/
-.back-top {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s 0s, visibility 0s 0.3s;
-}
 
-.back-top.backtop-is-visible {
-  transition: opacity 0.3s 0s, visibility 0s 0s;
-  z-index: 99;
-  visibility: visible;
-  opacity: 1;
-}
-
-.back-top.backtop-fade-out {
-  transition: opacity 0.3s 0s, visibility 0s 0s;
-  opacity: 0.5;
-}
-
-.no-touch .back-top:hover {
-  transition: opacity 0.3s 0s, visibility 0s 0s;
-  background-color: var(--bs-primary);
-  opacity: 1;
-}
 
 /*------------------------------------
  Mobile menu
@@ -19038,11 +19013,6 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
   --bs-pagination-active-color: var(--bs-gray-900);
   --bs-pagination-disabled-bg: var(--bs-gray-900);
   --bs-pagination-disabled-border-color: var(--bs-gray-800);
-}
-
-.dark-skin .back-top {
-  background: var(--bs-dark);
-  color: var(--bs-light) !important;
 }
 
 .dark-skin .post-content {

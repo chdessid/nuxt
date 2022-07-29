@@ -10,22 +10,19 @@
             <div class="widget col-md-4">
               <h3 class="h5 widget-title border-bottom border-smooth">About Us</h3>
               <div class="widget-content">
-                <img class="footer-logo img-fluid mb-2" src="https://demo.bootstrap.news/bootnews/assets/img/logo/logo-mobile.png" alt="footer logo">
-                <p>News magazine bootstrap templates. This demo is crafted specifically to exhibit the use of the theme as a magazine site. Visit our main page for more demos.</p>
-                <address>
-                	<svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" class="bi bi-geo-alt-fill me-2" viewBox="0 0 16 16">
-									  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-									</svg>Amphitheatre, Mountain View,<br>
-                  San Francisco, CA 9321, United States
-                </address>
-                <p class="footer-info">
-                	<svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" class="bi bi-telephone-fill me-2" viewBox="0 0 16 16">
-									  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-									</svg>+(123) 456-7890</p>
+                <nuxt-img
+                 class="footer-logo img-fluid mb-2" 
+                 src="jaridaa_white.png" 
+                 alt="jaridaa_footer_logo"
+                 width="100%"
+                 height="100%"
+                 
+                 />
+                <p>Jaridaa News provides the latest articles, news and topics from around the world.</p>
                 <p class="footer-info mb-5">
                 	<svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" class="bi bi-envelope-fill me-2" viewBox="0 0 16 16">
 									  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-									</svg>support@example.com</p>
+									</svg>support@jaridaa.com</p>
                 <div class="social mb-4">
                   <!--facebook-->
                   <span class="my-2 me-3">
@@ -71,8 +68,10 @@
                     <!--thumbnail-->
                     <div class="col-3 col-md-4 pe-2 pe-md-0">
                       <div class="ratio_115-80 image-wrapper">
-                        <a href="../post/single1.html">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img6.jpg" alt="Image description">
+                        <a href="mypost1">
+                          <img class="img-fluid lazy" width="100%"
+                        height="100%" 
+                 src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img6.jpg" alt="im4">
                         </a>
                       </div>
                     </div>
@@ -80,7 +79,7 @@
                     <div class="col-9 col-md-8">
                       <div class="card-body pt-0">
                         <h3 class="card-title h6">
-                          <a href="../post/single1.html">Why Apple went to war with Facebook and Google this week</a>
+                          <a href="post33">Why Apple went to war with Facebook and Google this week</a>
                         </h3>
                         <div class="card-text small text-light">
                           <time datetime="2019-10-16">Oct 16, 2019</time>
@@ -95,8 +94,9 @@
                     <!--thumbnail-->
                     <div class="col-3 col-md-4 pe-2 pe-md-0">
                       <div class="ratio_115-80 image-wrapper">
-                        <a href="../post/single1.html">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img5.jpg" alt="Image description">
+                        <a href="mypost2">
+                          <img class="img-fluid lazy" width="100%"
+                 height="100%" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img5.jpg" alt="Imagepo09999">
                         </a>
                       </div>
                     </div>
@@ -104,7 +104,7 @@
                     <div class="col-9 col-md-8">
                       <div class="card-body pt-0">
                         <h3 class="card-title h6">
-                          <a href="../post/single1.html">The West Hoped for Democracy in Turkey. Erdogan Had Other Ideas</a>
+                          <a href="../post/eryt">The West Hoped for Democracy in Turkey. Erdogan Had Other Ideas</a>
                         </h3>
                         <div class="card-text small text-light">
                           <time datetime="2019-10-15">Oct 15, 2019</time>
@@ -119,8 +119,9 @@
                     <!--thumbnail-->
                     <div class="col-3 col-md-4 pe-2 pe-md-0">
                       <div class="ratio_115-80 image-wrapper">
-                        <a href="../post/single1.html">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img4.jpg" alt="Image description">
+                        <a href="post34568">
+                          <img class="img-fluid lazy" width="100%"
+                 height="100%" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img4.jpg" alt="Image">
                         </a>
                       </div>
                     </div>
@@ -128,7 +129,7 @@
                     <div class="col-9 col-md-8">
                       <div class="card-body pt-0">
                         <h3 class="card-title h6">
-                          <a href="../post/single1.html">Recalls Causing Shortages of Blood Pressure Drugs: What You Can Do</a>
+                          <a href="posr33">Recalls Causing Shortages of Blood Pressure Drugs: What You Can Do</a>
                         </h3>
                         <div class="card-text small text-light">
                           <time datetime="2019-10-14">Oct 14, 2019</time>
@@ -150,8 +151,9 @@
                     <!--thumbnail-->
                     <div class="col-3 col-md-4 pe-2 pe-md-0">
                       <div class="ratio_115-80 image-wrapper">
-                        <a href="../post/single1.html">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img3.jpg" alt="Image description">
+                        <a href="post54">
+                          <img class="img-fluid lazy" swidth="100%"
+                 height="100%" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img3.jpg" alt="Image description">
                         </a>
                       </div>
                     </div>
@@ -159,7 +161,7 @@
                     <div class="col-9 col-md-8">
                       <div class="card-body pt-0">
                         <h3 class="card-title h6">
-                          <a href="../post/single1.html">The West Hoped for Democracy in Turkey. Erdogan Had Other Ideas</a>
+                          <a href="pos99">Erdogan Had Other Ideas</a>
                         </h3>
                         <div class="card-text small text-light">
                           <time datetime="2019-10-16">Oct 16, 2019</time>
@@ -174,8 +176,9 @@
                     <!--thumbnail-->
                     <div class="col-3 col-md-4 pe-2 pe-md-0">
                       <div class="ratio_115-80 image-wrapper">
-                        <a href="../post/single1.html">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img2.jpg" alt="Image description">
+                        <a href="../post/pppp">
+                          <img class="img-fluid lazy" width="100%"
+                 height="100%" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img2.jpg" alt="Imajj">
                         </a>
                       </div>
                     </div>
@@ -183,7 +186,7 @@
                     <div class="col-9 col-md-8">
                       <div class="card-body pt-0">
                         <h3 class="card-title h6">
-                          <a href="../post/single1.html">Dale Earnhardt Jr. Returns to the Racetrack and an Old Hobby</a>
+                          <a href="posty6">Dale Earnhardt Jr. Returns to the Racetrack and an Old Hobby</a>
                         </h3>
                         <div class="card-text small text-light">
                           <time datetime="2019-10-15">Oct 15, 2019</time>
@@ -198,8 +201,11 @@
                     <!--thumbnail-->
                     <div class="col-3 col-md-4 pe-2 pe-md-0">
                       <div class="ratio_115-80 image-wrapper">
-                        <a href="../post/single1.html">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img1.jpg" alt="Image description">
+                        <a href="postaaas">
+                          <img class="img-fluid lazy" width="100%"
+                 height="100%" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png"
+                  data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img1.jpg" 
+                  alt="Image post44">
                         </a>
                       </div>
                     </div>
@@ -207,7 +213,7 @@
                     <div class="col-9 col-md-8">
                       <div class="card-body pt-0">
                         <h3 class="card-title h6">
-                          <a href="../post/single1.html">Yankees Party Like It’s 1998, at Least for a Day</a>
+                          <a href="ss09">Yankees Party Like It’s 1998, at Least for a Day</a>
                         </h3>
                         <div class="card-text small text-light">
                           <time datetime="2019-10-14">Oct 14, 2019</time>
@@ -230,10 +236,10 @@
           <nav class="navbar navbar-expand navbar-dark px-0">
             <!--footer left menu-->
             <ul class="navbar-nav footer-nav text-center first-start-lg-0">
-              <li class="nav-item"><a class="nav-link" href="/cmp/about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="/cmp/contact">Contact</a></li>
-              <li class="nav-item"><a class="nav-link" href="/cmp/privacy">Privacy</a></li>
-              <li class="nav-item"><a class="nav-link" href="/cmp/advertise" target="_blank">Advertise</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pg/about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pg/contact">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pg/privacy">Privacy</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pg/advertise" target="_blank">Advertise</a></li>
             </ul>
             <!--end footer left menu-->
             <!-- footer copyright -->

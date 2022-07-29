@@ -17,9 +17,9 @@
           <!-- logo in navbar -->
           <div class="logo-showbacktop">
             <a href="/">
-              <img
+              <nuxt-img
                 class="img-fluid"
-                src="https://demo.bootstrap.news/bootnews/assets/img/logo/default-logo.png"
+                src="jaridaa_logo.png"
                 alt="Logo site"
               />
             </a>

@@ -4,9 +4,9 @@
     <div class="block-area">
       <!-- block title -->
       <div class="block-title-6">
-        <h4 class="h5 border-primary">
+        <h2 class="h5 border-primary">
           <span class="bg-primary text-white">Latest post</span>
-        </h4>
+        </h2>
       </div>
       <!-- block content -->
       <div class="border-bottom-last-0 first-pt-0">
@@ -17,11 +17,13 @@
               <!--thumbnail-->
               <div class="ratio_360-202 image-wrapper">
                 <a href="#">
-                  <img 
+                  <NuxtImg 
                     class="img-fluid"
                     :src="`${uploadpath}/${post.attributes.devimages}`"
                     :alt="`${post.attributes.slug}`"
-                    
+                    width="300"
+                    height="300"
+                    sizes="sm:300 md:300 lg:300"
                   />
                 </a>
               </div>

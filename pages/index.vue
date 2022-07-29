@@ -1,7 +1,10 @@
 <template>
   <div>
+
+
     <body class="bg-repeat font-family">
       <!--Skippy-->
+
       <a id="skippy" class="visually-hidden-focusable" href="#content">
         <div class="container">
           <span class="skiplink-text">Skip to main content</span>
@@ -17,6 +20,9 @@
         <main id="content">
           <div class="container">
             <div class="row">
+
+              <h1>The Jaridaa Daily: Latest Hyderabad News, Telangana, Entertainment, India</h1>
+              <hr>
               <!-- top section -->
               <div class="col-12 mt-05">
                 <!-- <BreakingNews /> -->
@@ -32,60 +38,29 @@
         </main>
       </div>
       <!-- ========== END WRAPPER ========== -->
-
-      <!--Back to top-->
-      <a class="back-top btn btn-light border position-fixed r-1 b-1 backtop-is-visible backtop-fade-out" href="#">
-	    <svg class="bi bi-arrow-up" width="1rem" height="1rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	      <path fill-rule="evenodd" d="M8 3.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V4a.5.5 0 01.5-.5z" clip-rule="evenodd"></path>
-	      <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8 3.707 5.354 6.354a.5.5 0 11-.708-.708l3-3z" clip-rule="evenodd"></path>
-	    </svg>
-	</a>
-
-      <!-- <a class="back-top btn btn-light border position-fixed r-1 b-1" href="#">
-        <svg
-          class="bi bi-arrow-up"
-          width="1rem"
-          height="1rem"
-          viewBox="0 0 16 16"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M8 3.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V4a.5.5 0 01.5-.5z"
-            clip-rule="evenodd"
-          ></path>
-          <path
-            fill-rule="evenodd"
-            d="M7.646 2.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8 3.707 5.354 6.354a.5.5 0 11-.708-.708l3-3z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-</a> -->
     </body>
   </div>
 </template>
 
 <script>
-import BreakingNews from "@/components/AppUtility/BreakingNews/one.vue";
-import big_grid from "~/components/AppUtility/Posts/post_big_grid.vue";
-import post_left_column from "../components/AppUtility/Posts/post_left_column.vue";
-import post_right_column from "../components/AppUtility/Posts/post_right_column.vue";
-import post_full_column from "../components/AppUtility/Posts/post_full_column.vue";
+// import BreakingNews from "@/components/AppUtility/BreakingNews/one.vue";
+// import big_grid from "~/components/AppUtility/Posts/post_big_grid.vue";
+// import post_left_column from "../components/AppUtility/Posts/post_left_column.vue";
+// import post_right_column from "../components/AppUtility/Posts/post_right_column.vue";
+// import post_full_column from "../components/AppUtility/Posts/post_full_column.vue";
 import post_list_view from "../components/AppUtility/Posts/post_list_view.vue";
-
-import aside_read_more from "@/components/AppUtility/Aside/aside_read_more.vue";
+// import aside_read_more from "@/components/AppUtility/Aside/aside_read_more.vue";
 
 
 export default {
   components: {
-    BreakingNews,
-    big_grid,
-    post_left_column,
-    post_right_column,
-    post_full_column,
+    // BreakingNews,
+    // big_grid,
+    // post_left_column,
+    // post_right_column,
+    // post_full_column,
     post_list_view,
-    aside_read_more,
+    // aside_read_more,
   },
   name: "IndexPage",
 
