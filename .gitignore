@@ -104,5 +104,3 @@ dist
 .tern-port
 
 
-# SW PWA Files and Services Worker
-sw.\*
