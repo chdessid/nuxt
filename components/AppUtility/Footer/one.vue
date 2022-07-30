@@ -366,10 +366,14 @@
             <li class="nav-item">
               <a class="nav-link" href="/pg/policy" target="_blank">Policy</a>
             </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="/pg/advertise" target="_blank"
                 >Advertise</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pg/register" target="_blank">Register</a>
             </li>
           </ul>
           <!--end footer left menu-->

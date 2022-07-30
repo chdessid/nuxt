@@ -4,9 +4,7 @@
       <div class="columns">
         <div class="column is-4 is-offset-4">
           <h2 class="title has-text-centered">Log In</h2>
-
           <Notification v-if="error" type="danger" :message="error" />
-
           <form method="post" @submit.prevent="login">
             <div class="field">
               <label class="label">Email</label>
@@ -39,10 +37,10 @@
           <div style="margin-top: 20px">
             <p>
               Don't have an account?
-              <nuxt-link to="/register">Register</nuxt-link>
+              <nuxt-link to="/pg/register">Register</nuxt-link>
             </p>
             <p>
-              <nuxt-link to="/forgot-password">Forgot Password?</nuxt-link>
+              <nuxt-link to="/pg/forgot-password">Forgot Password?</nuxt-link>
             </p>
           </div>
         </div>

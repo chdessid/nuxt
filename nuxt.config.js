@@ -2,6 +2,9 @@ const TerserPlugin = require("terser-webpack-plugin");
 require("dotenv").config();
 
 export default {
+  router: {
+    middleware: 'guest'
+  },
   optimization: {
     minimize: true,
     minimizer: [new TerserPlugin()],
@@ -107,12 +110,12 @@ export default {
     local: {
       endpoints: {
         login: {
-          url: 'auth/local',
+          url: '/api/connect/',
           method: 'post',
           propertyName: 'jwt'
         },
         user: {
-          url: 'users/me',
+          url: '/api/users/me',
           method: 'get',
           propertyName: false
         },

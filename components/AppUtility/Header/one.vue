@@ -4,7 +4,6 @@
       <!--top mobile menu start-->
     
       <!-- end top mobile menu -->
-
       <!-- top menu -->
       <div class="mobile-sticky fs-6 bg-black">
         <div class="container">
@@ -89,7 +88,93 @@
         </div>
       </div>
       <!--end top menu-->
+    <div class="mobile-side">
+      <!--Left Mobile menu-->
+      <div id="back-menu" class="back-menu back-menu-start">
+        <span class="hamburger-icon open">
+          <svg class="bi bi-x" width="2rem" height="2rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd"></path>
+            <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clip-rule="evenodd"></path>
+          </svg>
+        </span>
+      </div>
 
+      <nav id="mobile-menu" class="menu-mobile d-flex flex-column push push-start shadow-r-sm bg-white">
+        <!-- mobile menu content -->
+        <div class="mobile-content mb-auto">
+          <!--logo-->
+          <div class="logo-sidenav p-2">
+            <a href="../home/index.html">
+              <nuxt-img 
+              class="mobile-logo img-fluid d-lg-none mx-auto" 
+              src="jaridaa_logo.png" 
+              alt="logo"/>
+            </a>
+          </div>
+
+          <!--navigation-->
+          <div class="sidenav-menu">
+            <nav class="navbar navbar-light navbar-inverse">
+              <ul id="side-menu" class="nav navbar-nav list-group list-unstyled side-link">
+                <li class="menu-item nav-item"><a href="#" class="nav-link active">Home</a></li>
+                <!-- dropdown menu start -->
+                <li class="menu-item menu-item-has-children dropdown mega-dropdown nav-item">
+                  <a href="#" class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="menu-11">Automotive</a>
+                  <!-- dropdown content -->
+                  <ul class="dropdown-menu" aria-labelledby="menu-11" role="menu">
+                    <li class="menu-item nav-item">
+                      <a href="../category/category.html" class="dropdown-item">Cars</a>
+                    </li>
+                  </ul>
+                </li><!-- end dropdown menu -->
+
+                <li class="menu-item nav-item"><a href="../category/category.html" class="nav-link">Business</a></li>
+                <!-- dropdown menu start -->
+                <li class="menu-item menu-item-has-children dropdown mega-dropdown nav-item">
+                  <a href="#" class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="menu-12">Lifestyle</a>
+                  <!-- dropdown content -->
+                  <ul class="dropdown-menu" aria-labelledby="menu-12" role="menu">
+                    <li class="menu-item nav-item"><a href="../category/category.html" class="dropdown-item">Fashion</a></li>
+                    <li class="menu-item menu-item-has-children mega-dropdown nav-item">
+                      <a href="#" class="dropdown-item dropdown-toggle" id="menu-13">Travel</a>
+                      <!-- dropdown submenu -->
+                      <ul class="submenu dropdown-menu" aria-labelledby="menu-13" role="menu">
+                        <li class="menu-item nav-item"><a href="../category/category.html" class="dropdown-item">Adventure</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children mega-dropdown nav-item">
+                      <a href="#" class="dropdown-item dropdown-toggle" id="menu-14">Science</a>
+                      <ul class="submenu dropdown-menu" aria-labelledby="menu-14" role="menu">
+                        <li class="menu-item nav-item"><a href="../category/category.html" class="dropdown-item">Health</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li><!-- end dropdown menu -->
+
+                <!-- dropdown menu start -->
+                <li class="menu-item menu-item-has-children dropdown mega-dropdown nav-item">
+                  <a href="#" class="dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="menu-15">Sports</a>
+                  <!-- dropdown content -->
+                  <ul class="dropdown-menu" aria-labelledby="menu-15" role="menu">
+                    <li class="menu-item nav-item"><a href="../category/category.html" class="dropdown-item">Soccer</a></li>
+                    <li class="menu-item nav-item"><a href="../category/category.html" class="dropdown-item">Moto GP</a></li>
+                    <li class="menu-item nav-item"><a href="../category/category.html" class="dropdown-item">Basket</a></li>
+                    <li class="menu-item nav-item"><a href="../category/category.html" class="dropdown-item">NFL</a></li>
+                  </ul>
+                </li><!-- end dropdown menu -->
+
+                <li class="menu-item nav-item"><a href="../category/category.html" class="nav-link">International</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- copyright mobile sidebar menu -->
+        <div class="mobile-copyright mt-5 px-4 text-center">
+          <p>Copyright <a href="index.html">Bootnews</a> - All right reserved</p>
+        </div>
+      </nav>
+    </div>
       <!--start second header-->
       <div class="second-header">
         <div class="container">

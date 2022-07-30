@@ -97,22 +97,7 @@ export default {
     };
 
       // fetch(`${process.env.BASE_URL}/api/articles?pagination[page]=2&pagination[pageSize]=30`)
-      fetch(`${process.env.BASE_URL}/api/articles`,
-      {
-
-        method: 'POST',
-
-        headers: {
-
-            Accept: 'application/json',
-
-            'Content-Type': 'application/json',
-
-        },
-
-        body: JSON.stringify(loginData),
-
-    }
+      fetch(`${process.env.BASE_URL}/api/articles`
       
       )
         .then((response) => {

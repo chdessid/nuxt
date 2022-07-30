@@ -53,7 +53,7 @@
           </form>
 
           <div class="has-text-centered" style="margin-top: 20px">
-            Already got an account? <nuxt-link to="/login">Login</nuxt-link>
+            Already got an account? <nuxt-link to="/pg/login">Login</nuxt-link>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@ export default {
       this.error = null;
       try {
         this.$axios.setToken(false);
-        await this.$axios.post("auth/local/register", {
+        await this.$axios.post("/api/auth/local/register", {
           username: this.username,
           email: this.email,
           password: this.password,
