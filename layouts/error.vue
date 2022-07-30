@@ -5,13 +5,14 @@
         <div class="col-sm-12 col-sm-offset-1 text-center">
           <h4 v-if="error.statusCode === 404" class="h1">
             Ooops !! Unexpected error we are working on fixing the problem,
-            Please back soon
+            Please back soon<span>
+            Page will refresh in 3 seconds</span>
           </h4>
 
           <h3 class="h2" v-else>
             Ooops !! Unexpected error we are working on fixing the problem,
-            Please back soon
-            Page will refresh 
+            Please back soon<span>
+            Page will refresh in 3 seconds</span>
           </h3>
 
           <NuxtLink class="btn btn-primary" to="/">Home page</NuxtLink>
