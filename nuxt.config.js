@@ -1,4 +1,5 @@
 const TerserPlugin = require("terser-webpack-plugin");
+require("dotenv").config();
 
 export default {
   optimization: {
@@ -77,7 +78,9 @@ export default {
   ],
   modules: [
     '@nuxtjs/dotenv',
+    '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    '@nuxtjs/auth',
     '@nuxt/image',
     ['@nuxtjs/html-minifier', { log: 'once', logHtml: true }],
     [
@@ -92,7 +95,32 @@ export default {
       },
     ],
   ],
-
+  axios: {
+    baseURL: process.env.BASE_URL
+  },
+/*
+ ** Auth module configuration
+ ** See https://auth.nuxtjs.org/schemes/local.html#options
+ */
+ auth: {
+  strategies: {
+    local: {
+      endpoints: {
+        login: {
+          url: 'auth/local',
+          method: 'post',
+          propertyName: 'jwt'
+        },
+        user: {
+          url: 'users/me',
+          method: 'get',
+          propertyName: false
+        },
+        logout: false
+      }
+    }
+  }
+},
   image: {
     dir: 'assets/img'
   }

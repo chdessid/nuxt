@@ -1,7 +1,5 @@
 <template>
   <div>
-
-
     <body class="bg-repeat font-family">
       <!--Skippy-->
 
@@ -20,12 +18,14 @@
         <main id="content">
           <div class="container">
             <div class="row">
-
-              <h1 hidden>The Jaridaa Daily: World News,Recipes,Tips,Sport Telangana, Entertainment, India</h1>
-              <hr>
+              <h1 hidden>
+                The Jaridaa Daily: World News,Recipes,Tips,Sport Telangana,
+                Entertainment, India
+              </h1>
+              <hr />
               <!-- top section -->
-              <post_left_column/>  
-              <post_right_column/> 
+              <post_left_column />
+              <post_right_column />
               <post_list_view :datas="posts" />
             </div>
           </div>
@@ -40,7 +40,6 @@
 import post_left_column from "~/components/AppUtility/Posts/post_left_column.vue";
 import post_right_column from "~/components/AppUtility/Posts/post_right_column.vue";
 import post_list_view from "~/components/AppUtility/Posts/post_list_view.vue";
-
 
 export default {
   components: {
@@ -89,8 +88,33 @@ export default {
         });
     },
     getPosts() {
+      const loginData = {
+
+        identifier: 'chedliessid',
+
+        password: 'Cc.09275920',
+
+    };
+
       // fetch(`${process.env.BASE_URL}/api/articles?pagination[page]=2&pagination[pageSize]=30`)
-      fetch(`${process.env.BASE_URL}/api/articles`)
+      fetch(`${process.env.BASE_URL}/api/articles`,
+      {
+
+        method: 'POST',
+
+        headers: {
+
+            Accept: 'application/json',
+
+            'Content-Type': 'application/json',
+
+        },
+
+        body: JSON.stringify(loginData),
+
+    }
+      
+      )
         .then((response) => {
           return response.json();
         })

@@ -12,7 +12,7 @@
           <h3 class="h2" v-else>
             Ooops !! Unexpected error we are working on fixing the problem,
             Please back soon<span>
-            Page will refresh in 3 seconds</span>
+            {{error.statusCode}}</span>
           </h3>
 
           <NuxtLink class="btn btn-primary" to="/">Home page</NuxtLink>
@@ -25,9 +25,9 @@
 
 <script>
 export default {
-  mounted() {
-    this.redirectFunc()
-  },
+  // mounted() {
+  //   this.redirectFunc()
+  // },
 
   props: ["error"],
   methods:{
