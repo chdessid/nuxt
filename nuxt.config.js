@@ -21,8 +21,20 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'robots', content: 'index,follow' },
-      { name:"theme-color" , content:"#ffffff" },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
+      { name: 'msapplication-config', content: 'browserconfig.xml' },
+      //{ name: 'google-site-verification', content: 'browserconfig.xml' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@jarnews' },
+      { name: 'twitter:title', content: 'Jaridaa Articles News: Breaking News | Latest News Today' },
+      { name: 'twitter:title', content: '	Stay informed and read the latest news today from Jaridaa News, the definitive source for independent journalism from every corner of the globe.' },
+      { name: 'twitter:image', content: 'https://jaridaa.com/og/img.png' },
+      { name: 'twitter:url', content: 'https://jaridaa.com' },
+      { name: 'fb:app_id', content: '870613919693099' },
+      { name: 'fb:pages', content: '249655421622' },
+      { name:"theme-color" , content:"#dedede" },
       { name: 'format-detection', content: 'telephone=no' },
       {
         hid: 'description',
@@ -33,8 +45,12 @@ export default {
       {
         hid: 'keywords',
         name: 'keywords',
-        content: 'news, articles, jaridaa, tutorials, development, software',
+        content: 'breaking news,U.S. news,news,news online,world news,weather,business,sports,politics,law, technology,entertainment,education,travel,health',
       },
+      { hid: 'og:image', property: 'og:image', content: 'https://jaridaa.com/og/img.png' },
+      { hid: 'og:image:width', property: 'og:image:width', content: '700' },
+      { hid: 'og:image:height', property: 'og:image:height', content: '449.9999999999987' },
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -98,8 +114,7 @@ export default {
     title: 'Jaridaa News',
     author: 'ESD SOL LDA ',
     lang: 'en',
-    theme_color:'#ffffff',
-
+    theme_color:'#dedede',
     description : 'Jaridaa.com provides latest news from Hyderabad, Telangana, India, Gulf and around the World. Get breaking news alerts from South India',
   },
   manifest: {

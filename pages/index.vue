@@ -21,18 +21,18 @@
           <div class="container">
             <div class="row">
 
-              <h1>The Jaridaa Daily: Latest Hyderabad News, Telangana, Entertainment, India</h1>
+              <h1 hidden>The Jaridaa Daily: Latest Hyderabad News, Telangana, Entertainment, India</h1>
               <hr>
               <!-- top section -->
               <div class="col-12 mt-05">
                 <!-- <BreakingNews /> -->
-                <!-- <big_grid/> -->
+              <big_grid/>
               </div>
-              <!-- <post_left_column/>  -->
-              <!-- <post_right_column/>  -->
-              <!-- <post_full_column/>  -->
+              <post_left_column/>  
+              <post_right_column/> 
+               <!-- <post_full_column/> -->
               <post_list_view :datas="posts" />
-              <!-- <aside_read_more/> -->
+              <aside_read_more/>
             </div>
           </div>
         </main>
@@ -44,21 +44,21 @@
 
 <script>
 // import BreakingNews from "@/components/AppUtility/BreakingNews/one.vue";
-// import big_grid from "~/components/AppUtility/Posts/post_big_grid.vue";
-// import post_left_column from "../components/AppUtility/Posts/post_left_column.vue";
-// import post_right_column from "../components/AppUtility/Posts/post_right_column.vue";
-// import post_full_column from "../components/AppUtility/Posts/post_full_column.vue";
-import post_list_view from "../components/AppUtility/Posts/post_list_view.vue";
-// import aside_read_more from "@/components/AppUtility/Aside/aside_read_more.vue";
+import big_grid from "@/components/AppUtility/Posts/post_big_grid.vue";
+import post_left_column from "@/components/AppUtility/Posts/post_left_column.vue";
+import post_right_column from "@/components/AppUtility/Posts/post_right_column.vue";
+///import post_full_column from "@/components/AppUtility/Posts/post_full_column.vue";
+import post_list_view from "@/components/AppUtility/Posts/post_list_view.vue";
+import aside_read_more from "@/components/AppUtility/Aside/aside_read_more.vue";
 
 
 export default {
   components: {
     // BreakingNews,
-    // big_grid,
-    // post_left_column,
-    // post_right_column,
-    // post_full_column,
+    big_grid,
+    post_left_column,
+    post_right_column,
+    //post_full_column,
     post_list_view,
     // aside_read_more,
   },
