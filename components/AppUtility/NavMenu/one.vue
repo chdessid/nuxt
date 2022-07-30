@@ -30,27 +30,27 @@
             id="start-main"
             class="navbar-nav main-nav navbar-uppercase first-start-lg-0"
           >
-            <li class="nav-item"><a class="nav-link" href="/news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="/category/news">News</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="/politics">Politics</a>
+              <a class="nav-link" href="/category/politics">Politics</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/sports">Sports</a>
+              <a class="nav-link" href="/category/sports">Sports</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/entertainment">Entertainment</a>
+              <a class="nav-link" href="/category/entertainment">Entertainment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/business">Business</a>
+              <a class="nav-link" href="/category/business">Business</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/technology">Technology</a>
+              <a class="nav-link" href="/category/technology">Technology</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/health">Health</a>
+              <a class="nav-link" href="/category/health">Health</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/science">Science</a>
+              <a class="nav-link" href="/category/science">Science</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -66,11 +66,11 @@
               <!--link-->
               <ul class="dropdown-menu" aria-labelledby="navbarhome">
                 <li>
-                  <a class="dropdown-item" href="/photography">Photography</a>
+                  <a class="dropdown-item" href="/category/photography">Photography</a>
                 </li>
-                <li><a class="dropdown-item" href="/video">Video</a></li>
-                <li><a class="dropdown-item" href="/islam">Islam</a></li>
-                <li><a class="dropdown-item" href="/lifestyle">Lifestyle</a></li>
+                <li><a class="dropdown-item" href="/category/video">Video</a></li>
+                <li><a class="dropdown-item" href="/category/islam">Islam</a></li>
+                <li><a class="dropdown-item" href="/category/lifestyle">Lifestyle</a></li>
               </ul>
               <!-- end link -->
             </li>
