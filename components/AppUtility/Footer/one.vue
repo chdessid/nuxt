@@ -185,7 +185,7 @@
                           width="100%"
                           height="100%"
                           src="placeholder-jaridaa.png"
-                          alt="Imagepo09999"
+                          alt="Imagepo09dd999"
                         />
                       </a>
                     </div>
@@ -218,7 +218,7 @@
                           width="100%"
                           height="100%"
                           src="placeholder-jaridaa.png"
-                          alt="Imagepo09999"
+                          alt="Imagepo09ssa999"
                         />
                       </a>
                     </div>
@@ -260,7 +260,7 @@
                           width="100%"
                           height="100%"
                           src="placeholder-jaridaa.png"
-                          alt="Imagepo09999"
+                          alt="Imagepo0as9999"
                         />
                       </a>
                     </div>
@@ -323,7 +323,7 @@
                           width="100%"
                           height="100%"
                           src="placeholder-jaridaa.png"
-                          alt="Imagepo09999"
+                          alt="Imagepo0sa9999"
                         />
                       </a>
                     </div>
