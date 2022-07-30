@@ -10,7 +10,7 @@
 	                      <!--thumbnail-->
 	                      <div class="height-ratio image-wrapper">
 	                        <a href="#">
-	                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/568x484/img1.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
 	                        </a>
 	                        <div class="position-absolute p-3 b-0 w-100 bg-lg-shadow">
 	                          <!--title-->
@@ -32,7 +32,7 @@
 	                      <!--thumbnail-->
 	                      <div class="height-ratio image-wrapper">
 	                        <a href="#">
-	                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/568x484/img2.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
 	                        </a>
 	                        <div class="position-absolute p-3 b-0 w-100 bg-lg-shadow">
 	                          <!--title-->
@@ -54,7 +54,7 @@
 	                      <!--thumbnail-->
 	                      <div class="height-ratio image-wrapper">
 	                        <a href="#">
-	                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/568x484/img3.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
 	                        </a>
 	                        <div class="position-absolute p-3 b-0 w-100 bg-lg-shadow">
 	                          <!--title-->
@@ -76,7 +76,7 @@
 	                      <!--thumbnail-->
 	                      <div class="height-ratio image-wrapper">
 	                        <a href="#">
-	                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/568x484/img4.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
 	                        </a>
 	                        <div class="position-absolute p-3 b-0 w-100 bg-lg-shadow">
 	                          <!--title-->
@@ -107,7 +107,7 @@
                       <div class="height-ratio image-wrapper">
                         <!--thumbnail-->
                         <a href="#">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/282x240/img1.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                         </a>
                         <!-- category & title -->
                         <div class="position-absolute px-3 pb-3 pt-0 b-0 w-100 bg-shadow">
@@ -125,7 +125,11 @@
                       <div class="height-ratio image-wrapper">
                         <!--thumbnail-->
                         <a href="#">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/282x240/img2.jpg" alt="Image description">
+                        <nuxt-img class="img-fluid bg-light" 
+                        src="placeholder-jaridaa.png" 
+                          width="100%"
+                          height="100%"
+                        alt="Image description"/>
                         </a>
                         <!-- category & title -->
                         <div class="position-absolute px-3 pb-3 pt-0 b-0 w-100 bg-shadow">
@@ -143,7 +147,12 @@
                       <div class="height-ratio image-wrapper">
                         <!--thumbnail-->
                         <a href="#">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/282x240/img3.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" 
+               src="placeholder-jaridaa.png" 
+                 width="100%"
+                          height="100%"
+               
+               alt="Image description"/>
                         </a>
                         <!-- category & title -->
                         <div class="position-absolute px-3 pb-3 pt-0 b-0 w-100 bg-shadow">
@@ -161,7 +170,10 @@
                       <div class="height-ratio image-wrapper">
                         <!--thumbnail-->
                         <a href="#">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/282x240/img4.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" 
+                 width="100%"
+                          height="100%"
+               alt="Image description"/>
                         </a>
                         <!-- category & title -->
                         <div class="position-absolute px-3 pb-3 pt-0 b-0 w-100 bg-shadow">

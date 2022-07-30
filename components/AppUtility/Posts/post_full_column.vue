@@ -18,7 +18,7 @@
                       <div class="ratio_327-278 image-wrapper">
                         <!-- thumbnail -->
                         <a href="#">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/400x340/img1.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                         </a>
                         <div class="position-absolute p-3 b-0 w-100 bg-shadow">
                           <!-- post title -->
@@ -41,7 +41,7 @@
                       <div class="ratio_327-278 image-wrapper">
                         <!-- thumbnail -->
                         <a href="#">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/400x340/img2.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                         </a>
                         <div class="position-absolute p-3 b-0 w-100 bg-shadow">
                           <!-- post title -->
@@ -64,7 +64,7 @@
                       <div class="ratio_327-278 image-wrapper">
                         <!-- thumbnail -->
                         <a href="#">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/400x340/img3.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                         </a>
                         <div class="position-absolute p-3 b-0 w-100 bg-shadow">
                           <!-- post title -->
@@ -87,7 +87,7 @@
                       <div class="ratio_327-278 image-wrapper">
                         <!-- thumbnail -->
                         <a href="#">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/400x340/img4.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                         </a>
                         <div class="position-absolute p-3 b-0 w-100 bg-shadow">
                           <!-- post title -->
@@ -110,7 +110,7 @@
                       <div class="ratio_327-278 image-wrapper">
                         <!-- thumbnail -->
                         <a href="#">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/400x340/img5.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                         </a>
                         <div class="position-absolute p-3 b-0 w-100 bg-shadow">
                           <!-- post title -->

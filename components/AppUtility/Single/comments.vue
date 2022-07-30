@@ -11,7 +11,7 @@
                 <li>
                   <div class="user-comment u-hover">
                     <footer>
-                      <img class="avatar-md border img-fluid float-start me-3" src="https://demo.bootstrap.news/bootnews/assets/img/avatar/avatar1.png" alt="avatar">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                       <div class="title-comments">
                         <a class="authors" href="#" target="_blank">Jennifer Tan</a>
                         <span class="text-muted dates small">
@@ -30,7 +30,7 @@
                 <li>
                   <div class="user-comment u-hover">
                     <footer>
-                      <img class="avatar-md border img-fluid float-start me-3" src="https://demo.bootstrap.news/bootnews/assets/img/avatar/avatar2.png" alt="avatar">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                       <div class="title-comments">
                         <a class="authors" href="#" target="_blank">Carlos vila</a>
                         <span class="text-muted dates small">
@@ -49,7 +49,7 @@
                     <li>
                       <div class="user-comment u-hover">
                         <footer>
-                          <img class="avatar-md border img-fluid float-start me-3" src="https://demo.bootstrap.news/bootnews/assets/img/avatar/avatar1.png" alt="avatar">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           <div class="title-comments">
                             <a class="authors" href="#" target="_blank">Jennifer Tan</a>
                             <span class="text-muted dates small">
@@ -68,7 +68,7 @@
                         <li class="comment " id="comment-5">
                           <div class="user-comment u-hover">
                             <footer>
-                              <img class="avatar-md border img-fluid float-start me-3" src="https://demo.bootstrap.news/bootnews/assets/img/avatar/avatar2.png" alt="avatar">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                               <div class="title-comments">
                                 <a class="authors" href="#" target="_blank">Carlos vila</a>
                                 <span class="text-muted dates small">
@@ -91,7 +91,7 @@
                 <li>
                   <div class="user-comment u-hover">
                     <footer>
-                      <img class="avatar-md border img-fluid float-start me-3" src="https://demo.bootstrap.news/bootnews/assets/img/avatar/avatar1.png" alt="avatar">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                       <div class="title-comments">
                         <a class="authors" href="#" target="_blank">Jennifer Tan</a>
                         <span class="text-muted dates small">
@@ -110,7 +110,7 @@
                     <li>
                       <div class="user-comment u-hover">
                         <footer>
-                          <img class="avatar-md border img-fluid float-start me-3" src="https://demo.bootstrap.news/bootnews/assets/img/avatar/avatar2.png" alt="avatar">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           <div class="title-comments">
                             <a class="authors" href="#" target="_blank">Carlos vila</a>
                             <span class="text-muted dates small">

@@ -10,7 +10,7 @@
                 <!--thumbnail-->
                 <div class="ratio_251-141 image-wrapper">
                   <a href="single4.html">
-                    <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/251x141/img1.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                     <!--icon start-->
                     <div class="hover-block position-absolute text-center top-4 w-100">
                       <!--icon music-->

@@ -17,7 +17,7 @@
                     <!--thumbnail-->
                     <div class="ratio_360-202 image-wrapper">
                       <a href="#">
-                        <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/360x202/img1.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                       </a>
                     </div>
                     <div class="card-body">
@@ -36,7 +36,7 @@
                         </span>
                       </div>
                       <!--description-->
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text">This is a wider card with  below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                   </article>
                 </div>
@@ -50,7 +50,7 @@
                       <div class="col-3 col-md-4 pe-2 pe-md-0">
                         <div class="ratio_115-80 image-wrapper">
                           <a href="#">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img1.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                       </div>
@@ -58,7 +58,7 @@
                       <div class="col-9 col-md-8">
                         <div class="card-body pt-0">
                           <h3 class="card-title h6 h5-sm h6-lg">
-                            <a href="#">Yankees Party Like It’s 1998, at Least for a Day</a>
+                            <a href="#">Yankees Party Like It’s 1998, at Least a Day</a>
                           </h3>
                           <div class="card-text small text-muted">
                             <time datetime="2019-10-22">Oct 22, 2019</time>
@@ -74,7 +74,7 @@
                       <div class="col-3 col-md-4 pe-2 pe-md-0">
                         <div class="ratio_160-112 image-wrapper">
                           <a href="#">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img2.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                       </div>
@@ -82,7 +82,7 @@
                       <div class="col-9 col-md-8">
                         <div class="card-body pt-0">
                           <h3 class="card-title h6 h5-sm h6-lg">
-                            <a href="#">Dale Earnhardt Jr. Returns to the Racetrack and an Old Hobby</a>
+                            <a href="#">Dale Earnhardt Jr. Returns to the and an Old Hobby</a>
                           </h3>
                           <div class="card-text small text-muted">
                             <time datetime="2019-10-21">Oct 21, 2019</time>
@@ -98,7 +98,7 @@
                       <div class="col-3 col-md-4 pe-2 pe-md-0">
                         <div class="ratio_160-112 image-wrapper">
                           <a href="#">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img3.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                       </div>
@@ -122,7 +122,7 @@
                       <div class="col-3 col-md-4 pe-2 pe-md-0">
                         <div class="ratio_160-112 image-wrapper">
                           <a href="#">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img4.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                       </div>
@@ -164,7 +164,7 @@
                       <!--thumbnail-->
                       <div class="ratio_360-202 image-wrapper">
                         <a href="#">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/360x202/img6.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                         </a>
                       </div>
                       <div class="card-body">
@@ -183,7 +183,7 @@
                           </span>
                         </div>
                         <!--description-->
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a wider card with supporting text below as a to additional content. This content is a little bit longer.</p>
                       </div>
                     </article>
                   </div>
@@ -197,7 +197,7 @@
                         <div class="col-3 col-md-4 pe-2 pe-md-0">
                           <div class="ratio_115-80 image-wrapper">
                             <a href="#">
-                              <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img21.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                             </a>
                           </div>
                         </div>
@@ -221,7 +221,7 @@
                         <div class="col-3 col-md-4 pe-2 pe-md-0">
                           <div class="ratio_115-80 image-wrapper">
                             <a href="#">
-                              <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img22.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                             </a>
                           </div>
                         </div>
@@ -245,7 +245,7 @@
                         <div class="col-3 col-md-4 pe-2 pe-md-0">
                           <div class="ratio_115-80 image-wrapper">
                             <a href="#">
-                              <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img23.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                             </a>
                           </div>
                         </div>
@@ -281,7 +281,7 @@
                       <!--thumbnail-->
                       <div class="ratio_360-202 image-wrapper">
                         <a href="#">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/360x202/img7.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                         </a>
                       </div>
                       <div class="card-body">
@@ -300,7 +300,7 @@
                           </span>
                         </div>
                         <!--description-->
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a wider card with supporting text to additional content. This content is a little bit longer.</p>
                       </div>
                     </article>
                   </div>
@@ -314,7 +314,7 @@
                         <div class="col-3 col-md-4 pe-2 pe-md-0">
                           <div class="ratio_115-80 image-wrapper">
                             <a href="#">
-                              <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img24.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                             </a>
                           </div>
                         </div>
@@ -338,7 +338,7 @@
                         <div class="col-3 col-md-4 pe-2 pe-md-0">
                           <div class="ratio_115-80 image-wrapper">
                             <a href="#">
-                              <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img25.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                             </a>
                           </div>
                         </div>
@@ -362,7 +362,7 @@
                         <div class="col-3 col-md-4 pe-2 pe-md-0">
                           <div class="ratio_115-80 image-wrapper">
                             <a href="#">
-                              <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img26.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                             </a>
                           </div>
                         </div>
@@ -403,7 +403,7 @@
                       <!-- thumbnail -->
                       <div class="ratio_360-202 image-wrapper">
                         <a href="#">
-                          <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/360x202/img8.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                         </a>
                       </div>
                     </div>
@@ -424,7 +424,7 @@
                           </span>
                         </div>
                         <!--description-->
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This very helpfull for generate default content..</p>
+                        <p class="card-text">This is a wider card with supportito additional content. This very helpful for generate default content..</p>
                       </div>
                     </div>
                   </div>
@@ -440,7 +440,7 @@
                       <div class="col-3 col-md-4 pe-2 pe-md-0">
                         <div class="ratio_115-80 image-wrapper">
                           <a href="#">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img27.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                       </div>
@@ -466,7 +466,7 @@
                       <div class="col-3 col-md-4 pe-2 pe-md-0">
                         <div class="ratio_115-80 image-wrapper">
                           <a href="#">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img28.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                       </div>
@@ -492,7 +492,7 @@
                       <div class="col-3 col-md-4 pe-2 pe-md-0">
                         <div class="ratio_115-80 image-wrapper">
                           <a href="#">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img29.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                       </div>
@@ -500,7 +500,7 @@
                       <div class="col-9 col-md-8">
                         <div class="card-body pt-0">
                           <h3 class="card-title h6 h5-sm h6-lg">
-                            <a href="#">The West Hoped for Democracy in Turkey. Erdogan Had Other Ideas</a>
+                            <a href="#">The West Hoped for  in Turkey. Erdogan Had Other Ideas</a>
                           </h3>
                           <div class="card-text small text-muted">
                             <time datetime="2019-10-17">Oct 17, 2019</time>
@@ -518,7 +518,7 @@
                       <div class="col-3 col-md-4 pe-2 pe-md-0">
                         <div class="ratio_115-80 image-wrapper">
                           <a href="#">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img30.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                       </div>
@@ -526,7 +526,7 @@
                       <div class="col-9 col-md-8">
                         <div class="card-body pt-0">
                           <h3 class="card-title h6 h5-sm h6-lg">
-                            <a href="#">Why Apple went to war with Facebook and Google this week</a>
+                            <a href="#">Why Apple went to war with Facebook and  week</a>
                           </h3>
                           <div class="card-text small text-muted">
                             <time datetime="2019-10-16">Oct 16, 2019</time>
@@ -557,14 +557,14 @@
                     <!--thumbnail-->
                     <div class="ratio_360-202 image-wrapper">
                       <a href="#">
-                        <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/360x202/img13.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                       </a>
                     </div>
                     <a class="bg-full-shadow" aria-label="overlay article" href="#"></a>
                     <div class="position-absolute px-3 top-3 w-100 z-index-5 text-center">
                       <!--title-->
                       <a href="#">
-                        <h5 class="card-title h3 h4-sm h3-md text-white my-1">94 Easy Chicken Recipes for Fuss-Free Family Dinners</h5>
+                        <h5 class="card-title h3 h4-sm h3-md text-white my-1">94 Easy Recipes for Fuss-Free  Dinners</h5>
                       </a>
                       <!--author-->
                       <span class="d-inline d-sm-none d-md-inline me-1">
@@ -581,7 +581,7 @@
                     <!--thumbnail-->
                     <div class="ratio_360-202 image-wrapper">
                       <a href="#">
-                        <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/360x202/img14.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                       </a>
                     </div>
                     <a class="bg-full-shadow" aria-label="overlay article" href="#"></a>
@@ -605,14 +605,14 @@
                     <!--thumbnail-->
                     <div class="ratio_360-202 image-wrapper">
                       <a href="#">
-                        <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/360x202/img15.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                       </a>
                     </div>
                     <a class="bg-full-shadow" aria-label="overlay article" href="#"></a>
                     <div class="position-absolute px-3 top-3 w-100 z-index-5 text-center">
                       <!--title-->
                       <a href="#">
-                        <h5 class="card-title h3 h4-sm h3-md text-white my-1">The 52 Places Traveler: Summer in France, in Two Very Different Ways</h5>
+                        <h5 class="card-title h3 h4-sm h3-md text-white my-1">The 52 Traveler: Summer in France, in Two Very Different Ways</h5>
                       </a>
                       <!--author-->
                       <span class="d-inline d-sm-none d-md-inline me-1">
@@ -629,7 +629,7 @@
                     <!--thumbnail-->
                     <div class="ratio_360-202 image-wrapper">
                       <a href="#">
-                        <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/360x202/img16.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                       </a>
                     </div>
                     <a class="bg-full-shadow" aria-label="overlay article" href="#"></a>

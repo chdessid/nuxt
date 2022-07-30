@@ -21,7 +21,7 @@
           <div class="container">
             <div class="row">
 
-              <h1 hidden>The Jaridaa Daily: Latest Hyderabad News, Telangana, Entertainment, India</h1>
+              <h1 hidden>The Jaridaa Daily: World News,Recipes,Tips,Sport Telangana, Entertainment, India</h1>
               <hr>
               <!-- top section -->
               <div class="col-12 mt-05">
@@ -60,7 +60,7 @@ export default {
     post_right_column,
     //post_full_column,
     post_list_view,
-    // aside_read_more,
+    aside_read_more,
   },
   name: "IndexPage",
 

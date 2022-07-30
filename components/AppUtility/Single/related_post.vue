@@ -16,13 +16,13 @@
                         <!--thumbnail-->
                         <div class="ratio_337-337 image-wrapper">
                           <a href="single1.html">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/337x337/img1.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                         <!-- title & date -->
                         <div class="position-absolute p-3 b-0 w-100 bg-shadow">
                           <a href="single1.html">
-                            <h5 class="card-title h3 h4-sm h5-md text-light my-1">94 Easy Chicken Recipes for Fuss-Free Family Dinners</h5>
+                            <h5 class="card-title h3 h4-sm h5-md text-light my-1">94 Easy Chicken Recipes for Fuss-Free Family </h5>
                           </a>
                           <div class="card-text my-2 dark small text-light">
                             <time datetime="2019-10-18">Oct 18, 2019</time>
@@ -40,7 +40,7 @@
                         <!--thumbnail-->
                         <div class="ratio_337-337 image-wrapper">
                           <a href="single1.html">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/337x337/img2.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                         <!-- title & date -->
@@ -64,7 +64,7 @@
                         <!--thumbnail-->
                         <div class="ratio_337-337 image-wrapper">
                           <a href="single1.html">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/337x337/img3.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                         <!-- title & date -->
@@ -88,7 +88,7 @@
                         <!--thumbnail-->
                         <div class="ratio_337-337 image-wrapper">
                           <a href="single1.html">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/337x337/img4.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                         <!-- title & date -->
@@ -112,7 +112,7 @@
                         <!--thumbnail-->
                         <div class="ratio_337-337 image-wrapper">
                           <a href="single1.html">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/337x337/img5.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                         <!-- title & date -->

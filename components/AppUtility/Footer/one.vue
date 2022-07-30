@@ -148,11 +148,10 @@
                     <div class="ratio_115-80 image-wrapper">
                       <a href="mypost1">
                         <nuxt-img
-                          class="img-fluid lazy"
+                          class="img-fluid bg-light"
                           width="100%"
                           height="100%"
-                          src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png"
-                          data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img6.jpg"
+                          src="placeholder-jaridaa.png"
                           alt="im4"
                         />
                       </a>
@@ -181,12 +180,11 @@
                   <div class="col-3 col-md-4 pe-2 pe-md-0">
                     <div class="ratio_115-80 image-wrapper">
                       <a href="mypost2">
-                        <img
-                          class="img-fluid lazy"
+                        <nuxt-img
+                          class="img-fluid bg-light"
                           width="100%"
                           height="100%"
-                          src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png"
-                          data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img5.jpg"
+                          src="placeholder-jaridaa.png"
                           alt="Imagepo09999"
                         />
                       </a>
@@ -215,13 +213,12 @@
                   <div class="col-3 col-md-4 pe-2 pe-md-0">
                     <div class="ratio_115-80 image-wrapper">
                       <a href="post34568">
-                        <img
-                          class="img-fluid lazy"
+                        <nuxt-img
+                          class="img-fluid bg-light"
                           width="100%"
                           height="100%"
-                          src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png"
-                          data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img4.jpg"
-                          alt="Image"
+                          src="placeholder-jaridaa.png"
+                          alt="Imagepo09999"
                         />
                       </a>
                     </div>
@@ -258,13 +255,12 @@
                   <div class="col-3 col-md-4 pe-2 pe-md-0">
                     <div class="ratio_115-80 image-wrapper">
                       <a href="post54">
-                        <img
-                          class="img-fluid lazy"
-                          swidth="100%"
+                        <nuxt-img
+                          class="img-fluid bg-light"
+                          width="100%"
                           height="100%"
-                          src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png"
-                          data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img3.jpg"
-                          alt="Image description"
+                          src="placeholder-jaridaa.png"
+                          alt="Imagepo09999"
                         />
                       </a>
                     </div>
@@ -289,13 +285,12 @@
                   <div class="col-3 col-md-4 pe-2 pe-md-0">
                     <div class="ratio_115-80 image-wrapper">
                       <a href="../post/pppp">
-                        <img
-                          class="img-fluid lazy"
+                        <nuxt-img
+                          class="img-fluid bg-light"
                           width="100%"
                           height="100%"
-                          src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png"
-                          data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img2.jpg"
-                          alt="Imajj"
+                          src="placeholder-jaridaa.png"
+                          alt="Imagepo09999"
                         />
                       </a>
                     </div>
@@ -323,13 +318,12 @@
                   <div class="col-3 col-md-4 pe-2 pe-md-0">
                     <div class="ratio_115-80 image-wrapper">
                       <a href="postaaas">
-                        <img
-                          class="img-fluid lazy"
+                      <nuxt-img
+                          class="img-fluid bg-light"
                           width="100%"
                           height="100%"
-                          src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png"
-                          data-src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img1.jpg"
-                          alt="Image post44"
+                          src="placeholder-jaridaa.png"
+                          alt="Imagepo09999"
                         />
                       </a>
                     </div>
@@ -339,7 +333,7 @@
                     <div class="card-body pt-0">
                       <h3 class="card-title h6">
                         <a href="ss09"
-                          >Yankees Party Like It’s 1998, at Least for a Day</a
+                          >Yankees Party Like 1998, at Least for a Day</a
                         >
                       </h3>
                       <div class="card-text small text-light">

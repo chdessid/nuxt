@@ -4,7 +4,12 @@
 
             <div class="media author-box py-3">
               <div class="media-figure">
-                <a href="../category/author.html"><img class="avatar-lg avatar-rounded border img-fluid" src="https://demo.bootstrap.news/bootnews/assets/img/avatar/avatar7.png" alt="author"></a>
+                <a href="../category/author.html">
+                  <nuxt-img class="avatar-lg avatar-rounded border img-fluid" 
+                  src="placeholder-jaridaa.png"
+                  
+                  
+                  alt="author"/></a>
               </div>
               <div class="ms-3 media-body">
                 <!--name-->

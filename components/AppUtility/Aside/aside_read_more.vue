@@ -19,7 +19,7 @@
                       <div class="col-3 col-md-4 pe-2 pe-md-0">
                         <div class="ratio_110-77 image-wrapper">
                           <a href="#">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/110x77/img1.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                       </div>
@@ -43,7 +43,7 @@
                       <div class="col-3 col-md-4 pe-2 pe-md-0">
                         <div class="ratio_110-77 image-wrapper">
                           <a href="#">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/110x77/img2.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                       </div>
@@ -51,7 +51,7 @@
                       <div class="col-9 col-md-8">
                         <div class="card-body pt-0">
                           <h3 class="card-title h6 h5-sm h6-md">
-                            <a href="#">94 Easy Chicken Recipes for Fuss-Free Family Dinners</a>
+                            <a href="#">94 Easy Chicken for Fuss-Free Family Dinners</a>
                           </h3>
                           <div class="card-text small text-muted">
                             <time datetime="2019-10-15">Oct 15, 2019</time>
@@ -67,7 +67,7 @@
                       <div class="col-3 col-md-4 pe-2 pe-md-0">
                         <div class="ratio_110-77 image-wrapper">
                           <a href="#">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/110x77/img3.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                       </div>
@@ -75,7 +75,7 @@
                       <div class="col-9 col-md-8">
                         <div class="card-body pt-0">
                           <h3 class="card-title h6 h4-sm h6-md">
-                            <a href="#">Ford reveals autonomous vehicle philosophies, priorities</a>
+                            <a href="#">Ford reveals autonomous  philosophies, priorities</a>
                           </h3>
                           <div class="card-text small text-muted">
                             <time datetime="2019-10-14">Oct 14, 2019</time>
@@ -91,7 +91,7 @@
                       <div class="col-3 col-md-4 pe-2 pe-md-0">
                         <div class="ratio_110-77 image-wrapper">
                           <a href="#">
-                            <img class="img-fluid lazy" src="https://demo.bootstrap.news/bootnews/assets/img/assets/lazy-empty.png" data-src="https://demo.bootstrap.news/bootnews/assets/img/110x77/img4.jpg" alt="Image description">
+               <nuxt-img class="img-fluid bg-light" src="placeholder-jaridaa.png" alt="Image description"/>
                           </a>
                         </div>
                       </div>
@@ -166,7 +166,7 @@
                     <div class="card-body pt-0">
                       <!--title-->
                       <h3 class="card-title h5">
-                        <a href="#">5 Tips to Save Money Booking Your Next Hotel Room</a>
+                        <a href="#">5 Tips to Money Booking Your Next Hotel Room</a>
                       </h3>
                       <!--date-->
                       <div class="card-text small text-muted">
@@ -179,7 +179,7 @@
                     <div class="card-body pt-0">
                       <!--title-->
                       <h3 class="card-title h5">
-                        <a href="#">The 52 Places Traveler: Summer in France, in Two Very Different Ways</a>
+                        <a href="#">The 52 Places Traveler: Summer in , in Two Very Different Ways</a>
                       </h3>
                       <!--date-->
                       <div class="card-text small text-muted">
@@ -192,7 +192,7 @@
                     <div class="card-body pt-0">
                       <!--title-->
                       <h3 class="card-title h5">
-                        <a href="#">6 Simple Tips to Help Vegetarian or Vegan Travelers Eat Well, Anywhere</a>
+                        <a href="#">6 Simple Tips to Help  or Vegan Travelers Eat Well, Anywhere</a>
                       </h3>
                       <!--date-->
                       <div class="card-text small text-muted">

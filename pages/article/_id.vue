@@ -57,7 +57,7 @@
               <div class="post-content">
                 <!-- images -->
                 <figure class="image-wrapper ratio_single">
-                  <img 
+                  <nuxt-img 
                     class="i-amphtml-fill-content i-amphtml-replaced-content" 
                     :src="`${uploadpath}/${post.devimages}`"
                     :alt="`${post.slug}`"
