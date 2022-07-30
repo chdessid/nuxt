@@ -35,15 +35,15 @@
             <div id="navbarTogglerDemo" class="collapse navbar-collapse">
               <!-- Time -->
               <div class="date-area d-none d-lg-block">
-                <time class="navbar-text me-2" datetime="2019-10-28">Monday, Oct 28, 2019</time>
+                <time class="navbar-text me-2" >{{date_today}}</time>
               </div>
               <!--Top left menu-->
               <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="/support_ukraine">Support Ukraine </a></li>
-                <li class="nav-item"><a class="nav-link active" href="/world_news">World News </a></li>
-                <li class="nav-item"><a class="nav-link active" href="/india_news">India News </a></li>
-                <li class="nav-item"><a class="nav-link active" href="/gulf_news">Gulf News </a></li>
-                <li class="nav-item"><a class="nav-link active" href="/religion">Religion</a></li>
+                <li class="nav-item"><a class="nav-link " href="#">U.S News </a></li>
+                <li class="nav-item"><a class="nav-link " href="#">Europe News </a></li>
+                <li class="nav-item"><a class="nav-link " href="#">Africa News </a></li>
+                <li class="nav-item"><a class="nav-link " href="#">Gulf News </a></li>
+                <li class="nav-item"><a class="nav-link " href="#">Asia News </a></li>
               </ul>
               <!--end top left menu-->
               <!--Top right menu-->
@@ -127,3 +127,14 @@
     </header>
     <!--End header-->
 </template>
+<script>
+export default {
+    data() {
+      return {
+        date_today:new Date().toDateString()
+
+
+      }
+    }
+  }
+</script>
