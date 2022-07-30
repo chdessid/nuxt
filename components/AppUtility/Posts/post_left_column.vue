@@ -6,7 +6,7 @@
               <!--block title-->
               <div class="block-title-6">
                 <h4 class="h5 border-primary">
-                  <span class="bg-primary text-white">Sports</span>
+                  <span class="bg-primary text-white">TOP STORIES</span>
                 </h4>
               </div>
               <!--block content-->
