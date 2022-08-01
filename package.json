@@ -16,7 +16,6 @@
     "@nuxtjs/html-minifier": "^0.1.2",
     "@nuxtjs/manifest": "^3.0.0-beta.16",
     "@nuxtjs/pwa": "^3.3.5",
-    "@nuxtjs/yandex-metrika": "^1.4.0",
     "@vue/shared": "^3.2.37",
     "bootstrap": "^4.6.2",
     "core-js": "^3.19.3",

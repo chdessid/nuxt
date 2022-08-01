@@ -109,15 +109,7 @@ export default {
         },
       },
     ],
-    '@nuxtjs/yandex-metrika',
-      {
-        id: '89784536',
-        webvisor: true,
-        // clickmap: true,
-        // useCDN: false,
-        // trackLinks: true,
-        // accurateTrackBounce: true,
-      }
+    
   ],
   axios: {
     baseURL: process.env.BASE_URL
