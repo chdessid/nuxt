@@ -36,8 +36,7 @@
                 <!--title-->
                 <h3 class="card-title h2 h3-sm h2-md">
                   <nuxt-link :to="`/post/${post.id}`">{{
-                    post.attributes.name
-                  }}</nuxt-link>
+                    post.attributes.name}}</nuxt-link>
                 </h3>
                 <p class="card-text" v-if="post.attributes.description">
                   {{ post.attributes.description | truncate(200) }} ...
