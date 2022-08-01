@@ -168,10 +168,10 @@
             </nav>
           </div>
         </div>
-
+        <NavMenu/>
         <!-- copyright mobile sidebar menu -->
         <div class="mobile-copyright mt-5 px-4 text-center">
-          <p>Copyright <a href="index.html">Bootnews</a> - All right reserved</p>
+          <p>Copyright <a href="index.html">Jaridaa</a> - All right reserved</p>
         </div>
       </nav>
     </div>
@@ -213,7 +213,12 @@
     <!--End header-->
 </template>
 <script>
+import NavMenu from '@/components/AppUtility/NavMenu/one'
+
 export default {
+  components:{
+    NavMenu,
+},
     data() {
       return {
         date_today:new Date().toDateString()
