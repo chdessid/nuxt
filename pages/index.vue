@@ -37,9 +37,9 @@
 </template>
 
 <script>
-import post_left_column from "~/components/AppUtility/Posts/post_left_column.vue";
-import post_right_column from "~/components/AppUtility/Posts/post_right_column.vue";
-import post_list_view from "~/components/AppUtility/Posts/post_list_view.vue";
+import post_left_column from "@/components/AppUtility/Posts/post_left_column.vue";
+import post_right_column from "@/components/AppUtility/Posts/post_right_column.vue";
+import post_list_view from "@/components/AppUtility/Posts/post_list_view.vue";
 
 export default {
   components: {
