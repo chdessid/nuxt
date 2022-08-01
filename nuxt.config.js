@@ -174,9 +174,5 @@ export default {
     extend (config, ctx) {
       config.resolve.symlinks = false
     },
-    babel: {
-      compact: true,
-     },
-  
   }
 }
