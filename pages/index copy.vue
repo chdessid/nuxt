@@ -1,7 +1,8 @@
 <template>
-<div>
+  <div>
     <body class="bg-repeat font-family">
       <!--Skippy-->
+
       <a id="skippy" class="visually-hidden-focusable" href="#content">
         <div class="container">
           <span class="skiplink-text">Skip to main content</span>
@@ -38,6 +39,7 @@
                   <div class="border-bottom-last-0 first-pt-0">
                     <!--post start-->
                     <!-- <article v-for="post in datas" class="card card-full hover-a py-4"> -->
+
                     <article v-for="post in posts">
                       <div class="row">
                         <div class="col-sm-6 col-md-12 col-lg-6">
@@ -159,36 +161,77 @@
 </template>
 
 <script>
-import axios from "axios";
 import post_left_column from "@/components/AppUtility/Posts/post_left_column.vue";
 import post_right_column from "@/components/AppUtility/Posts/post_right_column.vue";
+// import post_list_view from "@/components/AppUtility/Posts/post_list_view.vue";
 
 export default {
-  name: "IndexPaage",
   components: {
     post_left_column,
     post_right_column,
     // post_list_view,
   },
+  name: "IndexPage",
+
   data() {
     return {
+      uploadpath: process.env.UPLOADS_URL,
       posts: [],
+      currentPage: 1,
+      showNextButton: false,
+      showPrevButton: false,
       error: null,
     };
   },
-  async mounted() {
-    try {
-      const response = await axios
-        .get("https://api.jaridaa.com/api/articles")
-        .then((response) => {
-          console.log(response.data);
-                            this.posts = response.data.data;
-
+  delimiters: ["[[", "]]"],
+  mounted() {
+    this.getPosts(), this.getPages();
+  },
+  methods: {
+    toggleSidebar() {
+      this.sidebar = !this.sidebar;
+    },
+    loadNext() {
+      this.currentPage += 1;
+      this.getPosts();
+    },
+    loadPrev() {
+      this.currentPage -= 1;
+      this.getPosts();
+    },
+    getPages() {
+      fetch(`${process.env.BASE_URL}/api/articles`)
+        .then((pager) => {
+          return pager.json();
+        })
+        .then((data) => {
+          this.page = data.meta.pagination;
+        })
+        .catch((error) => {
+          console.log(error);
         });
-
-    } catch (error) {
-      this.error = error;
-    }
+    },
+    getPosts() {
+      fetch(`${process.env.BASE_URL}/api/articles`)
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          this.showNextButton = false;
+          this.showPrevButton = false;
+          if (data.next) {
+            this.showNextButton = true;
+          }
+          if (data.previous) {
+            this.showPrevButton = true;
+          }
+          this.posts = data.data;
+          console.log(this.posts)
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
   },
 };
 </script>

@@ -79,12 +79,12 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/strapi',
     '@nuxtjs/pwa',
     '@nuxt/image',
     'nuxt-compress',
     '@nuxtjs/google-analytics'
   ],
+
   googleAnalytics: {
     id: process.env.GOOGLE_ANALYTICS_ID, // Use as fallback if no runtime config is provided
   },
@@ -114,7 +114,7 @@ export default {
     
   ],
   axios: {
-    baseURL: process.env.BASE_URL
+    baseURL: process.env.STRAPI_URL
   },
 
 /*
