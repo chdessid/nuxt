@@ -11,7 +11,9 @@
       <!-- block content -->
       <div class="border-bottom-last-0 first-pt-0">
         <!--post start-->
-        <article v-for="post in datas" class="card card-full hover-a py-4">
+                <!-- <article v-for="post in datas" class="card card-full hover-a py-4"> -->
+
+        <article v-for="post in datas" >
           <div class="row">
             <div class="col-sm-6 col-md-12 col-lg-6">
               <!--thumbnail-->
