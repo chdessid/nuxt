@@ -72,6 +72,7 @@ export default {
     '@/assets/css/theme.css',
   ],
   plugins: [
+   
   ],
   components: true,
 
@@ -82,6 +83,14 @@ export default {
     'nuxt-compress',
     '@nuxtjs/google-analytics'
   ],
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID, // Use as fallback if no runtime config is provided
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID
+    }
+  },
   modules: [
     '@nuxtjs/dotenv',
     '@nuxtjs/axios',
@@ -105,9 +114,6 @@ export default {
     baseURL: process.env.BASE_URL
   },
 
-  googleAnalytics: {
-    id: 'UA-217485355-2'
-  },
 /*
  ** Auth module configuration
  ** See https://auth.nuxtjs.org/schemes/local.html#options

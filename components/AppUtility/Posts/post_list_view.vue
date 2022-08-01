@@ -37,14 +37,6 @@
                     post.attributes.name
                   }}</nuxt-link>
                 </h3>
-                <!--author and date-->
-                <!-- <div class="card-text mb-2 text-muted small">
-                  <span class="d-none d-sm-inline me-1">
-                    <a class="fw-bold" href="#">John Doe</a>
-                  </span>
-                  <time datetime="2019-10-21">Oct 21, 2019</time>
-                </div> -->
-                <!--description-->
                 <p class="card-text" v-if="post.attributes.description">
                   {{ post.attributes.description | truncate(200) }} ...
                 </p>
