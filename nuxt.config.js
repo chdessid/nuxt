@@ -64,7 +64,7 @@ export default {
 
     ],
     script: [
-      { hid: 'bundle', src: '/js/vendor/bundle.min.js', type: 'text/javascript',defer: true },
+      // { hid: 'bundle', src: '/js/vendor/bundle.min.js', type: 'text/javascript',defer: true },
       { hid: 'yandexmetrica', src: '/js/vendor/yandexmetrica.js', type: 'text/javascript',defer: true },
     ]
   },
