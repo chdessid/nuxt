@@ -95,7 +95,7 @@ export default {
   },
   modules: [
     '@nuxtjs/dotenv',
-    '@nuxtjs/axios',
+    '@nuxtjs/apollo',
     '@nuxtjs/pwa',
     '@nuxtjs/auth',
     '@nuxt/image',
@@ -113,14 +113,14 @@ export default {
     ],
     
   ],
-  axios: {
-    baseURL: process.env.STRAPI_URL
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'https://api.jaridaa.com/graphql',
+      }
+    }
   },
 
-/*
- ** Auth module configuration
- ** See https://auth.nuxtjs.org/schemes/local.html#options
- */
  auth: {
   strategies: {
     local: {
