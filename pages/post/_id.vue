@@ -68,17 +68,6 @@
                   <figcaption>{{ post.name }}</figcaption>
                 </figure>
                 <p>{{ post.description }}</p>
-                <!-- images -->
-                <p>
-                  <strong>You must read other typology:</strong
-                  ><a
-                    class="text-primary"
-                    href="../../snippets/post/typology.html"
-                    target="_blank"
-                  >
-                    Typology post formate for article or pages.</a
-                  >
-                </p>
               </div>
 
               <!-- footer post -->

@@ -16,7 +16,7 @@
             <div class="col-sm-6 col-md-12 col-lg-6">
               <!--thumbnail-->
               <div class="ratio_360-202 image-wrapper">
-                <a href="#">
+                <nuxt-link :to="`/post/${post.id}`">
                   <nuxt-img 
                     class="img-fluid"
                     :src="`${uploadpath}/${post.attributes.devimages}`"
@@ -26,24 +26,24 @@
                     sizes="sm:300 md:300 lg:300"
                   />
                   
-                </a>
+                </nuxt-link>
               </div>
             </div>
             <div class="col-sm-6 col-md-12 col-lg-6">
               <div class="card-body pt-3 pt-sm-0 pt-md-3 pt-lg-0">
                 <!--title-->
                 <h3 class="card-title h2 h3-sm h2-md">
-                  <nuxt-link :to="`/article/${post.id}`">{{
+                  <nuxt-link :to="`/post/${post.id}`">{{
                     post.attributes.name
                   }}</nuxt-link>
                 </h3>
                 <!--author and date-->
-                <div class="card-text mb-2 text-muted small">
+                <!-- <div class="card-text mb-2 text-muted small">
                   <span class="d-none d-sm-inline me-1">
                     <a class="fw-bold" href="#">John Doe</a>
                   </span>
                   <time datetime="2019-10-21">Oct 21, 2019</time>
-                </div>
+                </div> -->
                 <!--description-->
                 <p class="card-text" v-if="post.attributes.description">
                   {{ post.attributes.description | truncate(200) }} ...

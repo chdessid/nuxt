@@ -25,11 +25,13 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'robots', content: 'index,follow' },
+      { name: 'google-site-verification', content: 'oiDVHENqVelPBJTn7V9aEcppe062RyHJQr3xMm1mNEc' },
+      { name: 'yandex-verification', content: '88e62c0a4b7484c6' },
+      { name: 'msvalidate.01', content: 'C31629AA725395432C8BD0789337718E' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
       { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
       { name: 'msapplication-config', content: 'browserconfig.xml' },
-      //{ name: 'google-site-verification', content: 'browserconfig.xml' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@jarnews' },
       { name: 'twitter:title', content: 'Jaridaa Articles News: Breaking News | Latest News Today' },
@@ -77,7 +79,8 @@ export default {
   buildModules: [
     '@nuxtjs/pwa',
     '@nuxt/image',
-    'nuxt-compress'
+    'nuxt-compress',
+    '@nuxtjs/google-analytics'
   ],
   modules: [
     '@nuxtjs/dotenv',
@@ -100,6 +103,10 @@ export default {
   ],
   axios: {
     baseURL: process.env.BASE_URL
+  },
+
+  googleAnalytics: {
+    id: 'UA-217485355-2'
   },
 /*
  ** Auth module configuration
