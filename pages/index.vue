@@ -83,74 +83,6 @@
                   <!-- end block content -->
                 </div>
                 <!--end block-->
-
-                <!--Pagination-->
-                <div class="clearfix my-4">
-                  <nav class="float-start" aria-label="Page navigation example">
-                    <!--page number-->
-                    <ul class="pagination">
-                      <li class="page-item active">
-                        <span class="page-link">1</span>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="../category/category.html"
-                          >2</a
-                        >
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="../category/category.html"
-                          >3</a
-                        >
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="../category/category.html"
-                          >4</a
-                        >
-                      </li>
-                      <li class="page-item">
-                        <span class="page-link disabled">....</span>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="../category/category.html"
-                          >12</a
-                        >
-                      </li>
-                      <li class="page-item">
-                        <a
-                          class="page-link"
-                          href="../category/category.html"
-                          aria-label="Next"
-                          title="Next page"
-                        >
-                          <span aria-hidden="true">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1.2rem"
-                              height="1.2rem"
-                              fill="currentColor"
-                              viewBox="0 0 512 512"
-                            >
-                              <polyline
-                                points="184 112 328 256 184 400"
-                                style="
-                                  fill: none;
-                                  stroke: currentColor;
-                                  stroke-linecap: round;
-                                  stroke-linejoin: round;
-                                  stroke-width: 48px;
-                                "
-                              />
-                            </svg>
-                          </span>
-                          <span class="visually-hidden">Next</span>
-                        </a>
-                      </li>
-                    </ul>
-                    <!--end page number-->
-                  </nav>
-                  <span class="py-2 float-end">Page 1 of 12</span>
-                </div>
-                <!--end pagination-->
               </div>
             </div>
           </div>
@@ -162,7 +94,7 @@
   </div>
 </template>
 <script>
-import { allArticles } from "../graphql/query";
+import { allArticles } from "@/graphql/articles";
 export default {
   data() {
     return {
@@ -180,6 +112,9 @@ export default {
     articles: {
       prefetch: true,
       query: allArticles,
+       variables () {
+            return { id: parseInt(this.$route.params.id) }
+          }
     },
   },
 };
