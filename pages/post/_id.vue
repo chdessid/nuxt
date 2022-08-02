@@ -9,7 +9,6 @@
 
     <!--Background image-->
     <div class="bg-image"></div>
-
     <!-- ========== WRAPPER ========== -->
     <div class="wrapper">
       <!--Content start-->
@@ -17,7 +16,7 @@
         <div class="container">
           <div class="row">
             <!--breadcrumb-->
-            <div class="col-12">
+            <div class="col-md-8">
               <nav aria-label="breadcrumb">
                 <ol
                   class="breadcrumb u-breadcrumb pt-3 px-0 mb-0 bg-transparent small"
@@ -57,12 +56,12 @@
               <div class="post-content">
                 <!-- images -->
                 <figure class="image-wrapper ratio_single">
-                  <img 
-                    class="i-amphtml-fill-content i-amphtml-replaced-content" 
+                  <img
+                    class="i-amphtml-fill-content i-amphtml-replaced-content"
                     :src="`${uploadpath}/${article.data.attributes.devimages}`"
                     :alt="`${article.data.attributes.slug}`"
-                    sizes="(max-width: 750px) 100vw, 750px" 
-                    data-hero-candidate="" 
+                    sizes="(max-width: 750px) 100vw, 750px"
+                    data-hero-candidate=""
                     data-hero=""
                   />
                   <figcaption>{{ article.data.attributes.name }}</figcaption>
@@ -93,24 +92,32 @@
               <!-- <Suggestion_box/> -->
               <!-- <Comments/> -->
             </div>
-            
+<post_right_column />
             <!-- <Aside_single/> -->
           </div>
         </div>
       </main>
+                      
+
     </div>
     <!-- ========== END WRAPPER ========== -->
-
   </body>
 </template>
 
 <script>
+import post_right_column from "@/components/AppUtility/Posts/post_right_column.vue";
+import { allArticles } from "@/graphql/articles";
+
 import { singlearticle } from "@/graphql/article";
 export default {
+  components: {
+    post_right_column,
+  },
   data() {
     return {
       uploadpath: process.env.UPLOADS_URL,
       article: [],
+      articles: [],
     };
   },
 
@@ -118,13 +125,19 @@ export default {
     article: {
       prefetch: true,
       query: singlearticle,
-      variables () {
-            return { id: parseInt(this.$route.params.id) }
-          }
+      variables() {
+        return { id: parseInt(this.$route.params.id) };
+      },
+    },
+    articles: {
+      prefetch: true,
+      query: allArticles,
+      variables() {
+        return { id: parseInt(this.$route.params.id) };
+      },
     },
   },
-  
 };
 </script>
-    
+
 <style></style>
