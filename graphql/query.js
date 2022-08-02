@@ -8,6 +8,7 @@ export const allArticles = gql`
           name
           devimages
           slug
+          description
         }
       }
     }
