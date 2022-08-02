@@ -57,6 +57,7 @@
                                   width="300"
                                   height="300"
                                   sizes="sm:300 md:300 lg:300"
+                                  @error="setFallbackImageUrl"
                                 />
                               </nuxt-link>
                             </div>
@@ -101,6 +102,9 @@ import post_left_column from "@/components/AppUtility/Posts/post_left_column.vue
 import post_right_column from "@/components/AppUtility/Posts/post_right_column.vue";
 
 export default {
+   props: {
+    article: Object
+  },
   components:{
     post_left_column,
     post_right_column
@@ -126,5 +130,10 @@ export default {
       },
     },
   },
+methods: {
+    setFallbackImageUrl(event) {
+        event.target.src = require(`~/assets/img/placeholder-jaridaa.png`)
+    }
+}
 };
 </script>

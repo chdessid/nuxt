@@ -13,17 +13,25 @@
         <!-- block content -->
         <div class="small-post">
           <!--post list-->
-          <article v-for="article in articles.data"
-                        :key="article.id" class="card card-full hover-a mb-4">
+          <article
+            v-for="article in articles.data"
+            :key="article.id"
+            class="card card-full hover-a mb-4"
+          >
             <div class="row">
               <!--thumbnail-->
               <div class="col-3 col-md-4 pe-2 pe-md-0">
                 <div class="ratio_110-77 image-wrapper">
                   <a href="#">
-                    <img :to="`/post/${article.id}`"
+                    <img
+                      :to="`/post/${article.id}`"
                       class="img-fluid bg-light"
                       :src="`${uploadpath}/${article.attributes.devimages}`"
                       :alt="`${article.attributes.slug}`"
+                      width="100%"
+                      height="100%"
+                      @error="setFallbackImageUrl"
+                      
                     />
                   </a>
                 </div>
@@ -32,8 +40,9 @@
               <div class="col-9 col-md-8">
                 <div class="card-body pt-0">
                   <h3 class="card-title h6 h5-sm h6-md">
-                    <nuxt-link :to="`/post/${article.id}`"
-                      >{{article.attributes.name}}</nuxt-link>
+                    <nuxt-link :to="`/post/${article.id}`">{{
+                      article.attributes.name
+                    }}</nuxt-link>
                   </h3>
                 </div>
               </div>
@@ -94,9 +103,9 @@ import post_left_column from "@/components/AppUtility/Posts/post_left_column.vue
 import post_right_column from "@/components/AppUtility/Posts/post_right_column.vue";
 
 export default {
-  components:{
+  components: {
     post_left_column,
-    post_right_column
+    post_right_column,
   },
   data() {
     return {
@@ -117,6 +126,11 @@ export default {
       variables() {
         return { id: parseInt(this.$route.params.id) };
       },
+    },
+  },
+  methods: {
+    setFallbackImageUrl(event) {
+      event.target.src = require(`~/assets/img/placeholder-jaridaa.png`);
     },
   },
 };

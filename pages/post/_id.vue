@@ -60,9 +60,11 @@
                     class="i-amphtml-fill-content i-amphtml-replaced-content"
                     :src="`${uploadpath}/${article.data.attributes.devimages}`"
                     :alt="`${article.data.attributes.slug}`"
-                    sizes="(max-width: 750px) 100vw, 750px"
+                    width="100%"
+                    height="100%"
                     data-hero-candidate=""
                     data-hero=""
+                    @error="setFallbackImageUrl"
                   />
                   <figcaption>{{ article.data.attributes.name }}</figcaption>
                 </figure>
@@ -92,13 +94,11 @@
               <!-- <Suggestion_box/> -->
               <!-- <Comments/> -->
             </div>
-<post_right_column />
+            <post_right_column />
             <!-- <Aside_single/> -->
           </div>
         </div>
       </main>
-                      
-
     </div>
     <!-- ========== END WRAPPER ========== -->
   </body>
@@ -135,6 +135,11 @@ export default {
       variables() {
         return { id: parseInt(this.$route.params.id) };
       },
+    },
+  },
+  methods: {
+    setFallbackImageUrl(event) {
+      event.target.src = require(`~/assets/img/placeholder-jaridaa.png`);
     },
   },
 };
