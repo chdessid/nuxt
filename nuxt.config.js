@@ -67,7 +67,7 @@ export default {
       // { hid: 'bundle', src: '/js/vendor/bundle.min.js', type: 'text/javascript',defer: true },
       { hid: 'yandexmetrica', src: '/js/vendor/yandexmetrica.js', type: 'text/javascript',defer: true },
       { hid: 'gtag', src: '/js/vendor/gtag.js', type: 'text/javascript' },
-      { hid: 'ganalytics', src: '/js/vendor/ganalytics.js', type: 'text/javascript'},
+      { hid: 'analytics', src: '/js/vendor/analytics.js', type: 'text/javascript'},
 
     ]
   },
