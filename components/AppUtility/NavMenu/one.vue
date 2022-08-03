@@ -26,54 +26,11 @@
           </div>
 
           <!--left main menu start-->
-          <ul
+          <ul v-for="category in categories.data"
             id="start-main"
             class="navbar-nav main-nav navbar-uppercase first-start-lg-0"
           >
-            <li class="nav-item"><a class="nav-link" href="/category/news">News</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="/category/politics">Politics</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/category/sports">Sports</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/category/entertainment">Entertainment</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/category/business">Business</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/category/technology">Technology</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/category/health">Health</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/category/science">Science</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                id="navbarhome"
-                class="nav-link active dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                href="#"
-                >More</a
-              >
-              <!--link-->
-              <ul class="dropdown-menu" aria-labelledby="navbarhome">
-                <li>
-                  <a class="dropdown-item" href="/category/photography">Photography</a>
-                </li>
-                <li><a class="dropdown-item" href="/category/video">Video</a></li>
-                <li><a class="dropdown-item" href="/category/islam">Islam</a></li>
-                <li><a class="dropdown-item" href="/category/lifestyle">Lifestyle</a></li>
-              </ul>
-              <!-- end link -->
-            </li>
+            <li class="nav-item"><NuxtLink  class="nav-link" :to="`/category/${category.attributes.name}`">{{category.attributes.name}}</NuxtLink ></li>
           </ul>
           <!--end left main menu-->
 
@@ -142,3 +99,24 @@
   </div>
   <!-- End main menu -->
 </template>
+<script>
+import { allArticlesByCategory } from "~/graphql/categories";
+
+export default {
+
+  data() {
+    return {
+      categories:[],
+    };
+  },
+  apollo: {
+    categories: {
+      prefetch: true,
+      query: allArticlesByCategory,
+      variables() {
+        return { id: parseInt(this.$route.params.id) };
+      },
+    },
+  },
+};
+</script>
