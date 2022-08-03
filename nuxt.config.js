@@ -102,6 +102,7 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/apollo',
     '@nuxtjs/pwa',
+    '@nuxtjs/google-analytics',
     '@nuxtjs/auth',
     '@nuxt/image',
     ['@nuxtjs/html-minifier', { log: 'once', logHtml: true }],
