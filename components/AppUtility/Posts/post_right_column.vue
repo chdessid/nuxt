@@ -31,7 +31,6 @@
                       width="100%"
                       height="100%"
                       @error="setFallbackImageUrl"
-                      
                     />
                   </a>
                 </div>
@@ -54,51 +53,14 @@
       </aside>
       <!--End widget-->
 
-      <!-- widget start -->
-      <aside class="widget">
-        <!-- widget content -->
-        <div class="p-4 border bg-light-dark text-center mb-4">
-          <!--title-->
-          <h4>Get Updates</h4>
-          <p class="text-dark-light">
-            Subscribe our newsletter to get the last update into your inbox!
-          </p>
-          <!--form start-->
-          <div class="mx-auto">
-            <form
-              id="subscribe"
-              class="needs-validation"
-              action="#"
-              novalidate=""
-            >
-              <div class="input-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  required=""
-                  aria-label="email form"
-                  placeholder="Enter your email address"
-                />
-                <button class="btn btn-primary" type="submit">Subscribe</button>
-                <div class="invalid-feedback">Please insert email address.</div>
-              </div>
-            </form>
-          </div>
-          <!--end form-->
-          <p class="small text-center text-dark-light mt-3">
-            hate spammers, and never spam
-          </p>
-        </div>
-        <!-- end widget content -->
-        <div class="gap-0"></div>
-      </aside>
     </div>
     <!--end Sidebar sticky-->
   </aside>
 </template>
 <script>
 import { allArticles } from "@/graphql/articles";
+import { allArticlesByCategory } from "~/graphql/categories";
+
 import post_left_column from "@/components/AppUtility/Posts/post_left_column.vue";
 import post_right_column from "@/components/AppUtility/Posts/post_right_column.vue";
 
@@ -111,6 +73,7 @@ export default {
     return {
       uploadpath: process.env.UPLOADS_URL,
       articles: [],
+      categories: [],
     };
   },
   filters: {
@@ -123,6 +86,13 @@ export default {
     articles: {
       prefetch: true,
       query: allArticles,
+      variables() {
+        return { id: parseInt(this.$route.params.id) };
+      },
+    },
+    categories: {
+      prefetch: true,
+      query: allArticlesByCategory,
       variables() {
         return { id: parseInt(this.$route.params.id) };
       },

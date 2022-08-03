@@ -1,9 +1,6 @@
 <template>
   <!--Main menu-->
-  <div
-    id="showbacktop"
-    class="showbacktop full-nav bg-white border-none border-lg-1 border-bottom shadow-b-sm py-0"
-  >
+  <div>
     <div class="container">
       <nav
         id="main-menu"
@@ -14,23 +11,21 @@
           id="navbarTogglerDemo1"
           class="collapse navbar-collapse hover-mode"
         >
-          <!-- logo in navbar -->
-          <div class="logo-showbacktop">
-            <a href="/">
-              <nuxt-img
-                class="img-fluid"
-                src="jaridaa_logo.png"
-                alt="Logo site"
-              />
-            </a>
-          </div>
+        
 
           <!--left main menu start-->
-          <ul v-for="category in categories.data"
+          <ul
+            v-for="category in categories.data"
             id="start-main"
             class="navbar-nav main-nav navbar-uppercase first-start-lg-0"
           >
-            <li class="nav-item"><NuxtLink  class="nav-link" :to="`/category/${category.attributes.name}`">{{category.attributes.name}}</NuxtLink ></li>
+            <li class="nav-item">
+              <NuxtLink
+                class="nav-link"
+                :to="`/category/${category.attributes.name}`"
+                >{{ category.attributes.name }}</NuxtLink
+              >
+            </li>
           </ul>
           <!--end left main menu-->
 
@@ -103,10 +98,9 @@
 import { allArticlesByCategory } from "~/graphql/categories";
 
 export default {
-
   data() {
     return {
-      categories:[],
+      categories: [],
     };
   },
   apollo: {

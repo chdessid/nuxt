@@ -14,8 +14,11 @@
                 <!--left post-->
                 <div class="block-area">
                   <div class="row">
-                    <div class="col-lg-6" v-for="category in categories.data">
-                      <!--block title-->
+                    <div
+                      v-if="category.attributes.articles.data[0]"
+                      class="col-lg-6"
+                      v-for="category in categories.data"
+                    >
                       <div class="block-title-6">
                         <h4 class="h5 border-primary">
                           <span class="bg-primary text-white">{{
@@ -28,20 +31,29 @@
                         <article class="card card-full hover-a mb-4">
                           <!--thumbnail-->
                           <div class="ratio_360-202 image-wrapper">
-                            <a href="#">
-                              <nuxt-img
+                            <!-- <nuxt-link :to="`/post/${article.id}`"> -->
+
+                            <nuxt-link :to="`/post/${category.attributes.articles.data[0].id}`">
+                              <img
                                 class="img-fluid bg-light"
-                                src="placeholder-jaridaa.png"
-                                alt="Image description"
+                                :src="`${uploadpath}/${category.attributes.articles.data[0].attributes.devimages}`"
+                                :alt="`${category.attributes.articles.data[0].attributes.slug}`"
+                                width="100%"
+                                height="100%"
+                                sizes="sm:300 md:300 lg:300"
+                                @error="setFallbackImageUrl"
                               />
-                            </a>
+                            </nuxt-link>
                           </div>
                           <div class="card-body">
                             <!--title-->
                             <h2 class="card-title h1-sm h3-lg">
-                              <a href="#">#</a>
+                              <nuxt-link :to="`/post/${category.attributes.articles.data[0].id}`">{{
+                                category.attributes.articles.data[0].attributes
+                                  .name
+                              }}</nuxt-link>
                             </h2>
-                            <p class="card-text">#</p>
+                            
                           </div>
                         </article>
                       </div>
@@ -50,14 +62,17 @@
                       <div class="small-post">
                         <!--post list-->
                         <article
-                          v-for="one in category.attributes.articles.data"
+                          v-for="one in startFrom(
+                            category.attributes.articles.data,
+                            1
+                          )"
                           class="card card-full hover-a mb-4"
                         >
                           <div class="row">
                             <!--thumbnail-->
                             <div class="col-3 col-md-4 pe-2 pe-md-0">
                               <div class="ratio_115-80 image-wrapper">
-                                <a href="#">
+                                <nuxt-link :to="`/post/${one.id}`">
                                   <img
                                     class="img-fluid bg-light"
                                     :src="`${uploadpath}/${one.attributes.devimages}`"
@@ -67,7 +82,7 @@
                                     sizes="sm:300 md:300 lg:300"
                                     @error="setFallbackImageUrl"
                                   />
-                                </a>
+                                </nuxt-link>
                               </div>
                             </div>
                             <!-- title & date -->
@@ -166,6 +181,11 @@
                   <!-- block content -->
                   <div class="border-bottom-last-0 first-pt-0">
                     <!--post start-->
+                    <!-- <article
+                      v-for="article in articles.data"
+                      :key="article.id"
+                      class="card card-full hover-a py-4"
+                    > -->
                     <article
                       v-for="article in articles.data"
                       :key="article.id"
@@ -273,6 +293,10 @@ export default {
   methods: {
     setFallbackImageUrl(event) {
       event.target.src = require(`~/assets/img/placeholder-jaridaa.png`);
+    },
+   
+    startFrom(arr, idx) {
+      return arr.slice(idx);
     },
   },
 };

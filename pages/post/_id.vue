@@ -104,8 +104,8 @@
 <script>
 import post_right_column from "@/components/AppUtility/Posts/post_right_column.vue";
 import { allArticles } from "@/graphql/articles";
-
 import { singlearticle } from "@/graphql/article";
+
 export default {
   components: {
     post_right_column,

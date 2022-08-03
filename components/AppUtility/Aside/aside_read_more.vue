@@ -138,46 +138,6 @@
       </aside>
       <!--End widget-->
 
-      <!-- widget start -->
-      <aside class="widget">
-        <!-- widget content -->
-        <div class="p-4 border bg-light-dark text-center mb-4">
-          <!--title-->
-          <h4>Get Updates</h4>
-          <p class="text-dark-light">
-            Subscribe our newsletter to get the last update into your inbox!
-          </p>
-          <!--form start-->
-          <div class="mx-auto">
-            <form
-              id="subscribe"
-              class="needs-validation"
-              action="#"
-              novalidate=""
-            >
-              <div class="input-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  required=""
-                  aria-label="email form"
-                  placeholder="Enter your email address"
-                />
-                <button class="btn btn-primary" type="submit">Subscribe</button>
-                <div class="invalid-feedback">Please insert email address.</div>
-              </div>
-            </form>
-          </div>
-          <!--end form-->
-          <p class="small text-center text-dark-light mt-3">
-            hate spammers, and never spam
-          </p>
-        </div>
-        <!-- end widget content -->
-        <div class="gap-0"></div>
-      </aside>
-
       <!-- custom post -->
       <aside class="widget">
         <div class="block-title-4">

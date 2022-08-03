@@ -5,7 +5,6 @@
     <NavMenu/>
     <Nuxt />
     <Footer/>
-      
     </div></div>
    
 </template>
