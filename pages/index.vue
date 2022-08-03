@@ -33,7 +33,9 @@
                           <div class="ratio_360-202 image-wrapper">
                             <!-- <nuxt-link :to="`/post/${article.id}`"> -->
 
-                            <nuxt-link :to="`/post/${category.attributes.articles.data[0].id}`">
+                            <nuxt-link
+                              :to="`/post/${category.attributes.articles.data[0].id}`"
+                            >
                               <img
                                 class="img-fluid bg-light"
                                 :src="`${uploadpath}/${category.attributes.articles.data[0].attributes.devimages}`"
@@ -48,12 +50,14 @@
                           <div class="card-body">
                             <!--title-->
                             <h2 class="card-title h1-sm h3-lg">
-                              <nuxt-link :to="`/post/${category.attributes.articles.data[0].id}`">{{
-                                category.attributes.articles.data[0].attributes
-                                  .name
-                              }}</nuxt-link>
+                              <nuxt-link
+                                :to="`/post/${category.attributes.articles.data[0].id}`"
+                                >{{
+                                  category.attributes.articles.data[0]
+                                    .attributes.name
+                                }}</nuxt-link
+                              >
                             </h2>
-                            
                           </div>
                         </article>
                       </div>
@@ -238,6 +242,7 @@
   </div>
 </template>
 <script>
+
 import { allArticles } from "@/graphql/articles";
 import { allArticlesByCategory } from "~/graphql/categories";
 import { singleCategory } from "~/graphql/category";
@@ -294,7 +299,7 @@ export default {
     setFallbackImageUrl(event) {
       event.target.src = require(`~/assets/img/placeholder-jaridaa.png`);
     },
-   
+
     startFrom(arr, idx) {
       return arr.slice(idx);
     },
