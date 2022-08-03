@@ -88,11 +88,6 @@ export default {
   googleAnalytics: {
     id: process.env.GOOGLE_ANALYTICS_ID, // Use as fallback if no runtime config is provided
   },
-  publicRuntimeConfig: {
-    googleAnalytics: {
-      id: process.env.GOOGLE_ANALYTICS_ID
-    }
-  },
   modules: [
     '@nuxtjs/dotenv',
     '@nuxtjs/apollo',
