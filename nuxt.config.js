@@ -69,6 +69,8 @@ export default {
       { hid: 'gtag', src: '/js/vendor/gtag.js', type: 'text/javascript' ,defer: true},
       { hid: 'analytics', src: '/js/vendor/analytics.js', type: 'text/javascript',defer: true},
       { hid: 'gtaganalytics', src: 'https://www.googletagmanager.com/gtag/js?id=G-NY3Q6MBPT1', type: 'text/javascript',defer: true},
+      { hid: 'tagmanagerhead', src: '/js/vendor/tagmanagerhead.js', type: 'text/javascript',defer: true},
+      { hid: 'tagmanagerbody', src: '/js/vendor/tagmanagerbody.js', type: 'text/javascript',defer: true},
 
     ]
   },
