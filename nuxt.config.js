@@ -66,8 +66,9 @@ export default {
     script: [
       // { hid: 'bundle', src: '/js/vendor/bundle.min.js', type: 'text/javascript',defer: true },
       { hid: 'yandexmetrica', src: '/js/vendor/yandexmetrica.js', type: 'text/javascript',defer: true },
-      { hid: 'gtag', src: '/js/vendor/gtag.js', type: 'text/javascript' },
-      { hid: 'analytics', src: '/js/vendor/analytics.js', type: 'text/javascript'},
+      { hid: 'gtag', src: '/js/vendor/gtag.js', type: 'text/javascript' ,defer: true},
+      { hid: 'analytics', src: '/js/vendor/analytics.js', type: 'text/javascript',defer: true},
+      { hid: 'gtaganalytics', src: 'https://www.googletagmanager.com/gtag/js?id=G-NY3Q6MBPT1', type: 'text/javascript',defer: true},
 
     ]
   },
