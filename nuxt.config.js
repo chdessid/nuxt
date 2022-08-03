@@ -72,7 +72,7 @@ export default {
   css: [
     '@/assets/css/theme.css',
   ],
-  plugins: [
+  plugins: ['@/plugins/gtag'
    
   ],
   components: true,
@@ -86,7 +86,15 @@ export default {
   ],
 
   googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID, // Use as fallback if no runtime config is provided
+    id: "UA-217485355-2", // Use as fallback if no runtime config is provided
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: "UA-217485355-2",
+      debug: {
+        sendHitTask: true
+      }
+    }
   },
   modules: [
     '@nuxtjs/dotenv',
