@@ -38,8 +38,8 @@ export default {
       { name: 'twitter:title', content: '	Stay informed and read the latest news today from Jaridaa News, the definitive source for independent journalism from every corner of the globe.' },
       { name: 'twitter:image', content: 'https://jaridaa.com/og/img.png' },
       { name: 'twitter:url', content: 'https://jaridaa.com' },
-      { name: 'fb:app_id', content: '870613919693099' },
-      { name: 'fb:pages', content: '249655421622' },
+      { name: 'fb:app_id', content: '1037927353575529' },
+      { name: 'fb:pages', content: 'jaridaacom' },
       { name:"theme-color" , content:"#dedede" },
       { name: 'format-detection', content: 'telephone=no' },
       {
