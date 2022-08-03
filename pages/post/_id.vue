@@ -9,7 +9,6 @@
 
     <!--Background image-->
     <div class="bg-image"></div>
-    <!-- ========== WRAPPER ========== -->
     <div class="wrapper">
       <!--Content start-->
       <main id="content">
@@ -22,14 +21,12 @@
                   class="breadcrumb u-breadcrumb pt-3 px-0 mb-0 bg-transparent small"
                 >
                   <li class="breadcrumb-item">
-                    <a href="../home/index.html">Home</a>
+                    <a href="/">Home</a>
                   </li>
-                  <li class="breadcrumb-item">
-                    <a href="../category/category.html">Travel</a>
-                  </li>
-                  <li class="breadcrumb-item">
-                    <a href="../category/category2.html">Low budget</a>
-                  </li>
+                  <!-- <li class="breadcrumb-item">
+                    <a href="../category/category.html">To Insert Category Later</a>
+                  </li> -->
+           
                   <li
                     class="breadcrumb-item active d-none d-md-block"
                     aria-current="page"

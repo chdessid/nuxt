@@ -10,8 +10,6 @@
                 Entertainment, India
               </h1>
               <hr />
-              <!-- top section -->
-
               <div class="col-md-8">
                 <!--left post-->
                 <div class="block-area">
@@ -101,10 +99,14 @@
                     </h4>
                   </div>
                   <!-- block content -->
-                  <div  class="row">
+                  <div class="row">
                     <!--post list-->
-                    <article v-for="category in categories.data"   class="col-sm-6 col-md-12 col-lg-6">
-                      <div  v-if="category.attributes.name ='lifestle'" class="card card-full hover-a mb-4">
+                    <article
+                      v-for="singlepost in category.data.attributes.articles
+                        .data"
+                      class="col-sm-6 col-md-12 col-lg-6"
+                    >
+                      <div class="card card-full hover-a mb-4">
                         <!--thumbnail-->
                         <div class="ratio_360-202 image-wrapper">
                           <a href="#">
@@ -128,24 +130,24 @@
                             <h5
                               class="card-title h3 h4-sm h3-md text-white my-1"
                             >
-                              {{category.attributes.name}}
+                              {{ singlepost.attributes.name }}
                             </h5>
                           </a>
                           <!--author-->
                           <span class="d-inline d-sm-none d-md-inline me-1">
-                            <a class="fw-bold text-white" href="#">John Doe</a>
+                            <a class="fw-bold text-white" href="#">CHD </a>
                           </span>
                           <!--date-->
                           <time
                             class="d-sm-none d-md-inline m-0 text-white"
                             datetime="2019-10-21"
-                            >Oct 21, 2019</time
+                            >category</time
                           >
                         </div>
                       </div>
                     </article>
                     <!--post list-->
-                   
+
                     <!--end post list-->
                     <div class="gap-05"></div>
                   </div>
@@ -218,6 +220,7 @@
 <script>
 import { allArticles } from "@/graphql/articles";
 import { allArticlesByCategory } from "~/graphql/categories";
+import { singleCategory } from "~/graphql/category";
 
 import post_left_column from "@/components/AppUtility/Posts/post_left_column.vue";
 import post_right_column from "@/components/AppUtility/Posts/post_right_column.vue";
@@ -257,6 +260,13 @@ export default {
       query: allArticlesByCategory,
       variables() {
         return { id: parseInt(this.$route.params.id) };
+      },
+    },
+    category: {
+      prefetch: true,
+      query: singleCategory,
+      variables() {
+        return { id: parseInt("13") };
       },
     },
   },
