@@ -51,6 +51,81 @@
         <!--end block content-->
         <div class="gap-0"></div>
       </aside>
+      <aside class="widget">
+                <div class="hover-a text-center">
+                  <!--title-->
+                  <div class="py-2">
+                    <span class="text-mute small">- Advertisement -</span>
+                  </div>
+                  <!--content-->
+                  <a href="#">
+                    <img class="img-fluid bg-light" src="@/assets/img/300x300-jaridaa.jpg" alt="ads space">
+                  </a>
+                </div>
+                <div class="gap-15"></div>
+              </aside>
+
+      <aside class="widget">
+                <div class="block-title-4">
+                  <h4 class="h5 title-arrow"><span>Travelling</span></h4>
+                </div>
+                <!--style 2-->
+                <div class="small-post">
+                  <!--post list-->
+                  <article class="card card-full hover-a mb-2">
+                    <div class="card-body pt-0">
+                      <!--title-->
+                      <h3 class="card-title h5">
+                        <a href="#">Fans celebrate in Paris after side reaches World Cup final</a>
+                      </h3>
+                      <!--date-->
+                      <div class="card-text small text-muted">
+                        <time datetime="2019-06-16">Jun 16, 2019</time>
+                      </div>
+                    </div>
+                  </article>
+                  <!--post list-->
+                  <article class="card card-full hover-a mb-2">
+                    <div class="card-body pt-0">
+                      <!--title-->
+                      <h3 class="card-title h5">
+                        <a href="#">5 Tips to Save Money Booking Your Next Hotel Room</a>
+                      </h3>
+                      <!--date-->
+                      <div class="card-text small text-muted">
+                        <time datetime="2019-06-16">Jun 16, 2019</time>
+                      </div>
+                    </div>
+                  </article>
+                  <!--post list-->
+                  <article class="card card-full hover-a mb-2">
+                    <div class="card-body pt-0">
+                      <!--title-->
+                      <h3 class="card-title h5">
+                        <a href="#">The 52 Places Traveler: Summer in France, in Two Very Different Ways</a>
+                      </h3>
+                      <!--date-->
+                      <div class="card-text small text-muted">
+                        <time datetime="2019-06-16">Jun 16, 2019</time>
+                      </div>
+                    </div>
+                  </article>
+                  <!--post list-->
+                  <article class="card card-full hover-a mb-2">
+                    <div class="card-body pt-0">
+                      <!--title-->
+                      <h3 class="card-title h5">
+                        <a href="#">6 Simple Tips to Help Vegetarian or Vegan Travelers Eat Well, Anywhere</a>
+                      </h3>
+                      <!--date-->
+                      <div class="card-text small text-muted">
+                        <time datetime="2019-06-16">Jun 16, 2019</time>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="gap-0"></div>
+              </aside>
       <!--End widget-->
 
     </div>

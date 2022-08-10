@@ -10,189 +10,211 @@
                 Entertainment, India
               </h1>
               <hr />
-              <div class="col-md-8">
-                <!--left post-->
+              <div  v-if="categories.data " class="col-md-8">
+                <!--CATEGORY MENU HEADER -->
                 <div class="block-area">
                   <div class="row">
                     <div
-                      v-if="category.attributes.articles.data[0]"
-                      class="col-lg-6"
+                      
+                      class="col-lg-12"
                       v-for="category in categories.data"
+                      
                     >
-                      <div class="block-title-6">
-                        <h4 class="h5 border-primary">
-                          <span class="bg-primary text-white">{{
-                            category.attributes.name
-                          }}</span>
-                        </h4>
-                      </div>
-                      <!--post big start-->
-                      <div class="big-post">
-                        <article class="card card-full hover-a mb-4">
-                          <!--thumbnail-->
-                          <div class="ratio_360-202 image-wrapper">
-                            <!-- <nuxt-link :to="`/post/${article.id}`"> -->
-
-                            <nuxt-link
-                              :to="`/post/${category.attributes.articles.data[0].id}`"
+                    
+                      <!--END CATEGORY MENU HEADER -->
+                      <!-- start block area-->
+                      <div class="block-area">
+                        <div class="block-title-6">
+                          <h4 class="h5 border-primary">
+                            <span class="bg-primary text-white">{{
+                              category.attributes.name
+                            }}</span>
+                          </h4>
+                        </div>
+                        <!--block content-->
+                        <div class="row">
+                          <!--post left start-->
+                          <div class="col-lg-6">
+                            <div v-if="category.attributes.articles.data[0]">
+                              <article class="card card-full hover-a mb-4">
+                                <!--thumbnail-->
+                                <div class="ratio_360-202 image-wrapper">
+                                  <a href="#">
+                                    <img
+                                      class="img-fluid lazy entered loaded"
+                                      :src="`${uploadpath}/${category.attributes.articles.data[0]}`"
+                                      data-src=""
+                                      :alt="`${category.attributes.articles.data[0]}`"
+                                      data-ll-status="loaded"
+                                      @error="setFallbackImageUrl"
+                                    />
+                                  </a>
+                                </div>
+                                <div class="card-body">
+                                  <!-- title -->
+                                  <h2 class="card-title h1-sm h3-lg">
+                                    <a href="#">{{
+                                      category.attributes.articles.data[0]
+                                        .attributes.name
+                                    }}</a>
+                                  </h2>
+                                  <!-- author, date and comments -->
+                                  <div class="card-text mb-2 text-muted small">
+                                    <span class="d-none d-sm-inline me-1">
+                                      <a class="fw-bold" href="#">John Doe</a>
+                                    </span>
+                                    <time datetime="2019-10-22"
+                                      >Oct 22, 2019</time
+                                    >
+                                    <span title="9 comment" class="float-end">
+                                      <span class="icon-comments"></span> 9
+                                    </span>
+                                  </div>
+                                  <!--description-->
+                                  <p class="card-text">
+                                    {{
+                                      category.attributes.articles.data[0]
+                                        .attributes.description
+                                    }}
+                                  </p>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                          <!--end post left-->
+                          <!--post right list start-->
+                          <div class="col-lg-6">
+                            <!--post list-->
+                            <article
+                              v-for="article_list in category.attributes
+                                .articles.data"
+                              class="card card-full hover-a mb-4"
                             >
-                              <img
-                                class="img-fluid bg-light"
-                                :src="`${uploadpath}/${category.attributes.articles.data[0].attributes.devimages}`"
-                                :alt="`${category.attributes.articles.data[0].attributes.slug}`"
-                                width="100%"
-                                height="100%"
-                                sizes="sm:300 md:300 lg:300"
-                                @error="setFallbackImageUrl"
-                              />
-                            </nuxt-link>
+                              <div class="row">
+                                <!--thumbnail-->
+                                <div class="col-3 col-md-4 pe-2 pe-md-0">
+                                  <div class="ratio_115-80 image-wrapper">
+                                    <a href="#">
+                                      <img
+                                        class="img-fluid lazy entered loaded"
+                                        :src="`${uploadpath}/${category.attributes.articles.data[0]}`"
+                                        data-src=""
+                                        :alt="`${category.attributes.articles.data[0]}`"
+                                        data-ll-status="loaded"
+                                        @error="setFallbackImageUrl"
+                                      />
+                                    </a>
+                                  </div>
+                                </div>
+                                <!-- title & date -->
+                                <div class="col-9 col-md-8">
+                                  <div class="card-body pt-0">
+                                    <h3 class="card-title h6 h5-sm h6-lg">
+                                      <a href="#">{{
+                                        article_list.attributes.name
+                                      }}</a>
+                                    </h3>
+                                    <div class="card-text">
+                                      <p>
+                                        {{
+                                          article_list.attributes.description
+                                        }}
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </article>
+
+                            <!--End post list-->
                           </div>
-                          <div class="card-body">
-                            <!--title-->
-                            <h2 class="card-title h1-sm h3-lg">
-                              <nuxt-link
-                                :to="`/post/${category.attributes.articles.data[0].id}`"
-                                >{{
-                                  category.attributes.articles.data[0]
-                                    .attributes.name
-                                }}</nuxt-link
-                              >
-                            </h2>
-                          </div>
-                        </article>
+                          <!--end post right list-->
+                        </div>
+                        <!-- end block content -->
                       </div>
-                      <!--end post big-->
-                      <!--post small start-->
-                      <div class="small-post">
-                        <!--post list-->
-                        <article
-                          v-for="one in startFrom(
-                            category.attributes.articles.data,
-                            1
-                          )"
-                          class="card card-full hover-a mb-4"
-                        >
-                          <div class="row">
-                            <!--thumbnail-->
-                            <div class="col-3 col-md-4 pe-2 pe-md-0">
-                              <div class="ratio_115-80 image-wrapper">
-                                <nuxt-link :to="`/post/${one.id}`">
+                      <!-- end block area-->
+                    </div>
+                    <div class="col-md-12">
+                      <div class="block-area">
+                        <!--block title-->
+                        <div class="block-title-6">
+                          <h4 class="h5 border-primary">
+                            <span class="bg-primary text-white">Food & Lifestyle</span>
+                          </h4>
+                        </div>
+                        <!-- block content -->
+                        <div v-for="categoryFood in  categories.data"  v-if="categoryFood.attributes.name == 'Food'" class="row">
+                          <article v-for="singleArticle in categoryFood.attributes.articles.data"  class="col-sm-6 col-md-12 col-lg-6">
+                              <div class="card card-full hover-a mb-4">
+                              <div class="ratio_360-202 image-wrapper">
+                                <nuxt-link :to="`/post/${singleArticle.id}`">
                                   <img
-                                    class="img-fluid bg-light"
-                                    :src="`${uploadpath}/${one.attributes.devimages}`"
-                                    :alt="`${one.attributes.slug}`"
-                                    width="100%"
-                                    height="100%"
-                                    sizes="sm:300 md:300 lg:300"
-                                    @error="setFallbackImageUrl"
-                                  />
+                                        class="img-fluid lazy entered loaded"
+                                        :src="`${uploadpath}/${singleArticle.attributes.devimages}`"
+                                        data-src=""
+                                        :alt="`${singleArticle.attributes.slug}`"
+                                        data-ll-status="loaded"
+                                        @error="setFallbackImageUrl"
+                                      />
                                 </nuxt-link>
                               </div>
-                            </div>
-                            <!-- title & date -->
-                            <div class="col-9 col-md-8">
-                              <div class="card-body pt-0">
-                                <h3 class="card-title h6 h5-sm h6-lg">
-                                  <nuxt-link :to="`/post/${one.id}`">
-                                    {{ one.attributes.name }}</nuxt-link
+                              <a
+                                class="bg-full-shadow"
+                                aria-label="overlay article"
+                                href="#"
+                              ></a>
+                              <div
+                                class="position-absolute px-3 top-3 w-100 z-index-5 text-center"
+                              >
+                                <!--title-->
+                                <a href="#">
+                                  <h5
+                                    class="card-title h3 h4-sm h3-md text-white my-1"
                                   >
-                                </h3>
+                                    {{singleArticle.attributes.name}}
+                                  </h5>
+                                </a>
+                                <!--author-->
+                                <span
+                                  class="d-inline d-sm-none d-md-inline me-1"
+                                >
+                                  <a class="fw-bold text-white" href="#"
+                                    >John Doe</a
+                                  >
+                                </span>
+                                <!--date-->
+                                <time
+                                  class="d-sm-none d-md-inline m-0 text-white"
+                                  datetime="2019-10-21"
+                                  >Oct 21, 2019</time
+                                >
                               </div>
                             </div>
-                          </div>
-                        </article>
+                          </article>
+
+                          <div class="gap-05"></div>
+                        </div>
+                        <!-- end block content -->
                       </div>
-                      <!--end post small-->
                     </div>
+                    <div class="col-12 mb-4"></div>
                   </div>
                 </div>
               </div>
               <post_right_column />
               <!--end left post-->
-              <div class="col-md-12">
-                <div class="block-area">
-                  <!--block title-->
-                  <div class="block-title-6">
-                    <h4 class="h5 border-primary">
-                      <span class="bg-primary text-white">FOOD</span>
-                    </h4>
-                  </div>
-                  <!-- block content -->
-                  <div class="row">
-                    <!--post list-->
-                    <article
-                      v-for="singlepost in category.data.attributes.articles
-                        .data"
-                      class="col-sm-6 col-md-12 col-lg-6"
-                    >
-                      <div class="card card-full hover-a mb-4">
-                        <!--thumbnail-->
-                        <div class="ratio_360-202 image-wrapper">
-                          <a href="#">
-                            <nuxt-img
-                              class="img-fluid bg-light"
-                              src="placeholder-jaridaa.png"
-                              alt="Image description"
-                            />
-                          </a>
-                        </div>
-                        <a
-                          class="bg-full-shadow"
-                          aria-label="overlay article"
-                          href="#"
-                        ></a>
-                        <div
-                          class="position-absolute px-3 top-3 w-100 z-index-5 text-center"
-                        >
-                          <!--title-->
-                          <a href="#">
-                            <h5
-                              class="card-title h3 h4-sm h3-md text-white my-1"
-                            >
-                              {{ singlepost.attributes.name }}
-                            </h5>
-                          </a>
-                          <!--author-->
-                          <span class="d-inline d-sm-none d-md-inline me-1">
-                            <a class="fw-bold text-white" href="#">CHD </a>
-                          </span>
-                          <!--date-->
-                          <time
-                            class="d-sm-none d-md-inline m-0 text-white"
-                            datetime="2019-10-21"
-                            >category</time
-                          >
-                        </div>
-                      </div>
-                    </article>
-                    <!--post list-->
 
-                    <!--end post list-->
-                    <div class="gap-05"></div>
-                  </div>
-                  <!-- end block content -->
-                </div>
-              </div>
+              <!-- START LATEST POSTS -->
               <div class="col-md-8">
-                <!-- block start -->
                 <div class="block-area">
-                  <!-- block title -->
                   <div class="block-title-6">
                     <h2 class="h5 border-primary">
                       <span class="bg-primary text-white">Latest post</span>
                     </h2>
                   </div>
-                  <!-- block content -->
                   <div class="border-bottom-last-0 first-pt-0">
-                    <!--post start-->
-                    <!-- <article
-                      v-for="article in articles.data"
-                      :key="article.id"
-                      class="card card-full hover-a py-4"
-                    > -->
                     <article
                       v-for="article in articles.data"
-                      :key="article.id"
                       class="card card-full hover-a py-4"
                     >
                       <div class="row">
@@ -201,7 +223,7 @@
                             <nuxt-link :to="`/post/${article.id}`">
                               <img
                                 class="img-fluid"
-                                :src="`${uploadpath}/${article.attributes.devimages}`"
+                                :src="`${uploadpath}/${article.devimages}`"
                                 :alt="`${article.attributes.slug}`"
                                 width="300"
                                 height="300"
@@ -234,7 +256,9 @@
                   </div>
                 </div>
               </div>
+              <!-- END LATEST POSTS -->
             </div>
+            
           </div>
         </main>
       </div>
@@ -242,7 +266,6 @@
   </div>
 </template>
 <script>
-
 import { allArticles } from "@/graphql/articles";
 import { allArticlesByCategory } from "~/graphql/categories";
 import { singleCategory } from "~/graphql/category";
@@ -291,7 +314,7 @@ export default {
       prefetch: true,
       query: singleCategory,
       variables() {
-        return { id: parseInt("13") };
+        return { id: parseInt("1") };
       },
     },
   },

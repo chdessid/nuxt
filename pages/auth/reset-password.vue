@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import Notification from "~/components/Notification/one";
+import Notification from "@/components/AppUtility/Notification/one";
 
 export default {
   middleware: "guest",

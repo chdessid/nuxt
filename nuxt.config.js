@@ -39,7 +39,7 @@ export default {
       { name: 'twitter:image', content: 'https://jaridaa.com/og/img.png' },
       { name: 'twitter:url', content: 'https://jaridaa.com' },
       { name: 'fb:app_id', content: '1037927353575529' },
-      { name: 'fb:pages', content: 'jaridaacom' },
+      { name: 'fb:pages', content: '103447092472312' },
       { name:"theme-color" , content:"#dedede" },
       { name: 'format-detection', content: 'telephone=no' },
       {
@@ -71,6 +71,8 @@ export default {
       { hid: 'gtaganalytics', src: 'https://www.googletagmanager.com/gtag/js?id=G-NY3Q6MBPT1', type: 'text/javascript',defer: true},
       { hid: 'tagmanagerhead', src: '/js/vendor/tagmanagerhead.js', type: 'text/javascript',defer: true},
       { hid: 'tagmanagerbody', src: '/js/vendor/tagmanagerbody.js', type: 'text/javascript',defer: true},
+      { hid: 'bootstrap', src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js', type: 'text/javascript'},
+      { hid: 'jquery', src: 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', type: 'text/javascript'},
 
     ]
   },
@@ -78,7 +80,7 @@ export default {
   css: [
     '@/assets/css/theme.css',
   ],
-  plugins: [
+  plugins: ['~plugins/axios'
    
   ],
   components: true,
@@ -106,8 +108,10 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/apollo',
     '@nuxtjs/pwa',
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next',
     '@nuxtjs/google-analytics',
-    '@nuxtjs/auth',
+    'nuxt-appwrite',
     '@nuxt/image',
     ['@nuxtjs/html-minifier', { log: 'once', logHtml: true }],
     [
@@ -123,33 +127,42 @@ export default {
     ],
     
   ],
+  axios: {
+    baseURL: process.env.STRAPI_URL || 'https://api.jaridaa.com/api'
+  },
+  auth: {
+    // Options
+    strategies: {
+      local: {
+        token: {
+          property: 'jwt',
+        },
+        user: {
+          property: false,
+        },
+        endpoints: {
+          login: {
+            url: 'auth/local',
+            method: 'post',
+          },
+          user: {
+            url: 'users/me',
+            method: 'get',
+          },
+          logout: false,
+        },
+      },
+    },
+  },
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'https://api.jaridaa.com/graphql',
+        httpEndpoint: 'http://localhost:1337/graphql',
       }
     }
   },
 
- auth: {
-  strategies: {
-    local: {
-      endpoints: {
-        login: {
-          url: '/api/connect/',
-          method: 'post',
-          propertyName: 'jwt'
-        },
-        user: {
-          url: '/api/users/me',
-          method: 'get',
-          propertyName: false
-        },
-        logout: false
-      }
-    }
-  }
-},
+
   image: {
     dir: 'assets/img'
   }

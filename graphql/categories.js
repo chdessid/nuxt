@@ -3,6 +3,7 @@ export const allArticlesByCategory = gql`
   query jaridaacategories {
     categories {
       data {
+        id
         attributes {
           name
           articles {

@@ -22,10 +22,7 @@
                 Jaridaa News provides the latest articles, news and topics from
                 around the world.
               </p>
-              <p class="footer-info mb-1">
-        
-                Email : support@jaridaa.com
-              </p>
+              <p class="footer-info mb-1">Email : support@jaridaa.com</p>
             </div>
           </div>
           <!-- center widget -->
@@ -35,15 +32,11 @@
             </h3>
             <p>Connect with the definitive source for global and local news</p>
             <ul>
-              <li class="nav-item"><NuxtLink
-                class="nav-link"
-                :to="`/category/`"
-                >Android</NuxtLink
-              >
+              <li class="nav-item">
+                <NuxtLink class="nav-link" :to="`/category/`">Android</NuxtLink>
               </li>
-              <li> IOS Apple</li>
-              <li> Smart TV</li>
-
+              <li>IOS Apple</li>
+              <li>Smart TV</li>
             </ul>
           </div>
           <!-- right widget -->
@@ -52,35 +45,30 @@
               MORE FROM JARIDAA
             </h3>
             <ul>
-              <li class="nav-item"><NuxtLink
-                class="nav-link"
-                :to="`/category/`"
-                >Jaridaa Books</NuxtLink
-              >
+              <li class="nav-item">
+                <NuxtLink class="nav-link" :to="`/category/`"
+                  >Jaridaa Books</NuxtLink
+                >
               </li>
-              <li class="nav-item"><NuxtLink
-                class="nav-link"
-                :to="`/category/`"
-                >Jaridaa Explore</NuxtLink
-              >
+              <li class="nav-item">
+                <NuxtLink class="nav-link" :to="`/category/`"
+                  >Jaridaa Explore</NuxtLink
+                >
               </li>
-              <li class="nav-item"><NuxtLink
-                class="nav-link"
-                :to="`/category/`"
-                >Jaridaa Courses</NuxtLink
-              >
+              <li class="nav-item">
+                <NuxtLink class="nav-link" :to="`/category/`"
+                  >Jaridaa Courses</NuxtLink
+                >
               </li>
-              <li class="nav-item"><NuxtLink
-                class="nav-link"
-                :to="`/category/`"
-                >Jaridaa Business</NuxtLink
-              >
+              <li class="nav-item">
+                <NuxtLink class="nav-link" :to="`/category/`"
+                  >Jaridaa Business</NuxtLink
+                >
               </li>
-              <li class="nav-item"><NuxtLink
-                class="nav-link"
-                :to="`/category/`"
-                >Jaridaa Products</NuxtLink
-              >
+              <li class="nav-item">
+                <NuxtLink class="nav-link" :to="`/category/`"
+                  >Jaridaa Products</NuxtLink
+                >
               </li>
             </ul>
           </div>
@@ -89,11 +77,15 @@
     </div>
     <!--End footer content-->
     <div id="newsletterfooter" class="py-5 px-3">
-        <div class="container">
-          <div class="row">
-          <h1 class="text-dark-light text-center" >Get Jaridaa Top News Updates</h1>
-          <p class="text-dark-light text-center" >Subscribe our newsletter to get the last update into your inbox!</p>
-            <!--form start-->
+      <div class="container">
+        <div class="row">
+          <h1 class="text-dark-light text-center">
+            Get Jaridaa Top News Updates
+          </h1>
+          <p class="text-dark-light text-center">
+            Subscribe our newsletter to get the last update into your inbox!
+          </p>
+          <!--form start-->
           <div class="mx-auto">
             <form
               id="subscribe"
@@ -110,20 +102,22 @@
                   aria-label="email form"
                   placeholder="Enter your email address"
                 />
-                <button class="btn btn-primary text-center " type="submit">Subscribe</button>
-                <div class="invalid-feedback" >Please insert email address.</div>
+                <button class="btn btn-primary text-center" type="submit">
+                  Subscribe
+                </button>
+                <div class="invalid-feedback">Please insert email address.</div>
               </div>
             </form>
             <p class="small text-center text-dark-light mt-3">
-            hate spammers, and never spam
-          </p>
-        </div>
-        <!-- end widget content -->
-        <div class="gap-0"></div>
+              hate spammers, and never spam
+            </p>
           </div>
+          <!-- end widget content -->
+          <div class="gap-0"></div>
         </div>
-          <!--end form-->
       </div>
+      <!--end form-->
+    </div>
     <!-- footer copyright menu -->
     <div class="footer-copyright bg-secondary">
       <div class="container">
@@ -140,18 +134,41 @@
             <li class="nav-item">
               <a class="nav-link" href="/pg/policy" target="_blank">Policy</a>
             </li>
-            
+
             <li class="nav-item">
               <a class="nav-link" href="/pg/advertise" target="_blank"
                 >Advertise</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pg/register" target="_blank">Register</a>
-            </li>
+          
+            <NuxtLink
+              v-if="!isAuthenticated"
+              class="text-white p-2 hover:bg-gray-700"
+              to="/user/login"
+              >Sign In</NuxtLink
+            >
+            <NuxtLink
+              v-if="!isAuthenticated"
+              class="text-white p-2 hover:bg-gray-700"
+              to="/user/register"
+              >Sign Up</NuxtLink
+            >
+            <NuxtLink
+              v-if="isAuthenticated"
+              class="text-white p-2 hover:bg-gray-700"
+              to="/user/me"
+              >Your profile</NuxtLink
+            >
+            <a
+              v-if="isAuthenticated"
+              class="text-white p-2 hover:bg-gray-700"
+              href="/logout"
+              @click.prevent="userLogout"
+              >Logout</a
+            >
           </ul>
           <!--end footer left menu-->
-          
+
           <!-- footer copyright -->
           <ul class="navbar-nav ms-auto text-center">
             <li class="d-inline navbar-text">
@@ -167,3 +184,16 @@
   </footer>
   <!-- End Footer -->
 </template>
+    <script>
+    import { mapGetters } from 'vuex'
+    export default {
+      computed: {
+        ...mapGetters(['isAuthenticated']),
+      },
+      methods: {
+        async userLogout() {
+          await this.$auth.logout()
+        },
+      },
+    }
+    </script>
