@@ -109,12 +109,13 @@ export default {
       prefetch: true,
       query: singleCategory,
       variables() {
-        return { id: parseInt("2") };
+        return { id: parseInt("3") };
       },
     },
   },
   methods: {
     setFallbackImageUrl(event) {
+      
       event.target.src = require(`~/assets/img/placeholder-jaridaa.png`);
     },
   },

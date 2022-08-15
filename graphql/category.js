@@ -11,7 +11,7 @@ query event($id: ID!) {
             attributes {
               name
               description
-              devimages
+              images
               slug
             }
           }

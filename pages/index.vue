@@ -10,17 +10,11 @@
                 Entertainment, India
               </h1>
               <hr />
-              <div  v-if="categories.data " class="col-md-8">
+              <div v-if="categories.data" class="col-md-8">
                 <!--CATEGORY MENU HEADER -->
                 <div class="block-area">
                   <div class="row">
-                    <div
-                      
-                      class="col-lg-12"
-                      v-for="category in categories.data"
-                      
-                    >
-                    
+                    <div class="col-lg-12" v-for="category in categories.data">
                       <!--END CATEGORY MENU HEADER -->
                       <!-- start block area-->
                       <div class="block-area">
@@ -53,10 +47,18 @@
                                 <div class="card-body">
                                   <!-- title -->
                                   <h2 class="card-title h1-sm h3-lg">
-                                    <a href="#">{{
+                                    <nuxt-link
+                                      :to="`/post/${category.attributes.articles.data[0].id}`"
+                                      >{{
+                                        category.attributes.articles.data[0]
+                                          .attributes.name
+                                      }}</nuxt-link
+                                    >
+
+                                    <!-- <a href="#">{{
                                       category.attributes.articles.data[0]
                                         .attributes.name
-                                    }}</a>
+                                    }}</a> -->
                                   </h2>
                                   <!-- author, date and comments -->
                                   <div class="card-text mb-2 text-muted small">
@@ -74,7 +76,7 @@
                                   <p class="card-text">
                                     {{
                                       category.attributes.articles.data[0]
-                                        .attributes.description
+                                        .attributes.description | truncate(200)
                                     }}
                                   </p>
                                 </div>
@@ -118,6 +120,7 @@
                                       <p>
                                         {{
                                           article_list.attributes.description
+                                            | truncate(100)
                                         }}
                                       </p>
                                     </div>
@@ -139,23 +142,33 @@
                         <!--block title-->
                         <div class="block-title-6">
                           <h4 class="h5 border-primary">
-                            <span class="bg-primary text-white">Food & Lifestyle</span>
+                            <span class="bg-primary text-white"
+                              >Food & Lifestyle</span
+                            >
                           </h4>
                         </div>
                         <!-- block content -->
-                        <div v-for="categoryFood in  categories.data"  v-if="categoryFood.attributes.name == 'Food'" class="row">
-                          <article v-for="singleArticle in categoryFood.attributes.articles.data"  class="col-sm-6 col-md-12 col-lg-6">
-                              <div class="card card-full hover-a mb-4">
+                        <div
+                          v-for="categoryFood in categories.data"
+                          v-if="categoryFood.attributes.name == 'Food'"
+                          class="row"
+                        >
+                          <article
+                            v-for="singleArticle in categoryFood.attributes
+                              .articles.data"
+                            class="col-sm-6 col-md-12 col-lg-6"
+                          >
+                            <div class="card card-full hover-a mb-4">
                               <div class="ratio_360-202 image-wrapper">
                                 <nuxt-link :to="`/post/${singleArticle.id}`">
                                   <img
-                                        class="img-fluid lazy entered loaded"
-                                        :src="`${uploadpath}/${singleArticle.attributes.devimages}`"
-                                        data-src=""
-                                        :alt="`${singleArticle.attributes.slug}`"
-                                        data-ll-status="loaded"
-                                        @error="setFallbackImageUrl"
-                                      />
+                                    class="img-fluid lazy entered loaded"
+                                    :src="`${uploadpath}/${singleArticle.attributes.devimages}`"
+                                    data-src=""
+                                    :alt="`${singleArticle.attributes.slug}`"
+                                    data-ll-status="loaded"
+                                    @error="setFallbackImageUrl"
+                                  />
                                 </nuxt-link>
                               </div>
                               <a
@@ -171,7 +184,7 @@
                                   <h5
                                     class="card-title h3 h4-sm h3-md text-white my-1"
                                   >
-                                    {{singleArticle.attributes.name}}
+                                    {{ singleArticle.attributes.name }}
                                   </h5>
                                 </a>
                                 <!--author-->
@@ -258,7 +271,6 @@
               </div>
               <!-- END LATEST POSTS -->
             </div>
-            
           </div>
         </main>
       </div>

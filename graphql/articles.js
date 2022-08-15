@@ -6,7 +6,7 @@ export const allArticles = gql`
         id
         attributes {
           name
-          devimages
+          images
           slug
           description
         }

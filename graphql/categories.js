@@ -12,7 +12,7 @@ export const allArticlesByCategory = gql`
               attributes {
                 name 
               description
-              devimages
+              images
               }
             }
           }

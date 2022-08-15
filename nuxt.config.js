@@ -131,9 +131,9 @@ export default {
     ],
     
   ],
-  axios: {
-    baseURL: process.env.STRAPI_URL || 'https://api.jaridaa.com/api'
-  },
+  // axios: {
+  //   baseURL: process.env.STRAPI_URL || 'https://api.jaridaa.com/api'
+  // },
   auth: {
     // Options
     strategies: {
@@ -161,7 +161,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'http://localhost:1337/graphql',
+        httpEndpoint: 'https://api.jaridaa.com/graphql',
       }
     }
   },

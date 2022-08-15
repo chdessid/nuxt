@@ -7,8 +7,8 @@ export const singlearticle = gql`
         attributes {
           name
           description
-          devimages
-          categories {
+          images
+          category {
             data {
               id
               attributes {
