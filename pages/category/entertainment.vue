@@ -109,7 +109,7 @@ export default {
       prefetch: true,
       query: singleCategory,
       variables() {
-        return { id: parseInt("5") };
+        return { id: parseInt("4") };
       },
     },
   },
