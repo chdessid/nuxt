@@ -2,10 +2,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 require("dotenv").config();
 
 export default {
-  server: {
-    port: 3000, // default: 3000
-    host: '0.0.0.0', // default: localhost,
-  },
+
   router: {
     middleware: 'guest'
   },
@@ -18,7 +15,7 @@ export default {
     host: '0.0.0.0', // default: localhost,
   },
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: 'server',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
