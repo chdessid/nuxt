@@ -73,7 +73,7 @@
                 </div>
               </div>
             </div>
-                          <post_right_column />
+                          <!-- <post_right_column /> -->
 
           </div>
         </div>

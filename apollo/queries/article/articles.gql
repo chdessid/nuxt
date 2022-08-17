@@ -1,0 +1,19 @@
+query {
+  articles {
+    data {
+      id
+      attributes {
+        name
+        description
+        images 
+        category {
+          data {
+            attributes {
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -25,6 +25,8 @@
     "graphql-tag": "^2.12.6",
     "nuxt": "^2.15.8",
     "nuxt-appwrite": "^0.3.0",
+    "nuxt-ssr-cache": "^1.5.2",
+    "uikit": "^3.15.3",
     "vue": "^2.6.14",
     "vue-gtag": "^2.0.1",
     "vue-server-renderer": "^2.6.14",

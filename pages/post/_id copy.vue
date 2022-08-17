@@ -9,20 +9,32 @@
 
     <!--Background image-->
     <div class="bg-image"></div>
-
-    <!-- ========== WRAPPER ========== -->
     <div class="wrapper">
       <!--Content start-->
       <main id="content">
         <div class="container">
           <div class="row">
             <!--breadcrumb-->
-             <div v-if="$fetchState.pending">Fetching data from Shopify ...</div>
-            <div v-else>
-            <div >
-            {{article.data.attributes.name}}
-            
-            </div>
+            <div class="col-md-8">
+              <nav aria-label="breadcrumb">
+                <ol
+                  class="breadcrumb u-breadcrumb pt-3 px-0 mb-0 bg-transparent small"
+                >
+                  <li class="breadcrumb-item">
+                    <a href="/">Home</a>
+                  </li>
+                  <!-- <li class="breadcrumb-item">
+                    <a href="../category/category.html">To Insert Category Later</a>
+                  </li> -->
+           
+                  <li
+                    class="breadcrumb-item active d-none d-md-block"
+                    aria-current="page"
+                  >
+                    {{ article.data.attributes.name }}
+                  </li>
+                </ol>
+              </nav>
             </div>
             <!--end breadcrumb-->
 
@@ -30,9 +42,9 @@
             <div class="col-md-8">
               <div class="post-title mb-4">
                 <!-- title -->
-                <!-- <h1 class="entry-title display-4 display-2-lg mt-2">
+                <h1 class="entry-title display-4 display-2-lg mt-2">
                   {{ article.data.attributes.name }}
-                </h1> -->
+                </h1>
                 <!-- atribute -->
                 <!-- <Post_meta/> -->
               </div>
@@ -40,18 +52,20 @@
               <!-- post content -->
               <div class="post-content">
                 <!-- images -->
-                <!-- <figure class="image-wrapper ratio_single">
-                  <nuxt-img 
-                    class="i-amphtml-fill-content i-amphtml-replaced-content" 
+                <figure class="image-wrapper ratio_single">
+                  <img
+                    class="i-amphtml-fill-content i-amphtml-replaced-content"
                     :src="`${uploadpath}/${article.data.attributes.devimages}`"
                     :alt="`${article.data.attributes.slug}`"
-                    sizes="(max-width: 750px) 100vw, 750px" 
-                    data-hero-candidate="" 
+                    width="100%"
+                    height="100%"
+                    data-hero-candidate=""
                     data-hero=""
+                    @error="setFallbackImageUrl"
                   />
                   <figcaption>{{ article.data.attributes.name }}</figcaption>
-                </figure> -->
-                <!-- <p>{{ article.data.attributes.description }}</p> -->
+                </figure>
+                <p>{{ article.data.attributes.description }}</p>
               </div>
 
               <!-- footer post -->
@@ -77,24 +91,30 @@
               <!-- <Suggestion_box/> -->
               <!-- <Comments/> -->
             </div>
-            
+            <post_right_column />
             <!-- <Aside_single/> -->
           </div>
         </div>
       </main>
     </div>
     <!-- ========== END WRAPPER ========== -->
-
   </body>
 </template>
 
 <script>
+import post_right_column from "@/components/AppUtility/Posts/post_right_column.vue";
+import { allArticles } from "@/graphql/articles";
 import { singlearticle } from "@/graphql/article";
+
 export default {
+  components: {
+    post_right_column,
+  },
   data() {
     return {
       uploadpath: process.env.UPLOADS_URL,
       article: [],
+      articles: [],
     };
   },
 
@@ -102,13 +122,24 @@ export default {
     article: {
       prefetch: true,
       query: singlearticle,
-      variables () {
-            return { id: parseInt(this.$route.params.id) }
-          }
+      variables() {
+        return { id: parseInt(this.$route.params.id) };
+      },
+    },
+    articles: {
+      prefetch: true,
+      query: allArticles,
+      variables() {
+        return { id: parseInt(this.$route.params.id) };
+      },
     },
   },
-  
+  methods: {
+    setFallbackImageUrl(event) {
+      event.target.src = require(`~/assets/img/placeholder-jaridaa.png`);
+    },
+  },
 };
 </script>
-    
+
 <style></style>

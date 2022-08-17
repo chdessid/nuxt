@@ -6,16 +6,6 @@ export const allArticlesByCategory = gql`
         id
         attributes {
           name
-          articles {
-            data {
-              id
-              attributes {
-                name 
-              description
-              images
-              }
-            }
-          }
         }
       }
     }

@@ -356,10 +356,10 @@
                   class="navbar-nav main-nav navbar-uppercase first-start-lg-0"
                 >
                   <li class="nav-item">
-                    <NuxtLink
+                    <router-link
                       class="nav-link"
                       :to="`/category/${category.attributes.name}`"
-                      >{{ category.attributes.name }}</NuxtLink
+                      >{{ category.attributes.name }}</router-link
                     >
                   </li>
                 </ul>

@@ -17,12 +17,28 @@
         <div class="container">
           <div class="row">
             <!--breadcrumb-->
-             <div v-if="$fetchState.pending">Fetching data from Shopify ...</div>
-            <div v-else>
-            <div >
-            {{article.data.attributes.name}}
-            
-            </div>
+            <div class="col-12">
+              <nav aria-label="breadcrumb">
+                <ol
+                  class="breadcrumb u-breadcrumb pt-3 px-0 mb-0 bg-transparent small"
+                >
+                  <li class="breadcrumb-item">
+                    <a href="../home/index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="../category/category.html">Travel</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="../category/category2.html">Low budget</a>
+                  </li>
+                  <li
+                    class="breadcrumb-item active d-none d-md-block"
+                    aria-current="page"
+                  >
+                    {{ article.data.attributes.name }}
+                  </li>
+                </ol>
+              </nav>
             </div>
             <!--end breadcrumb-->
 
@@ -30,9 +46,9 @@
             <div class="col-md-8">
               <div class="post-title mb-4">
                 <!-- title -->
-                <!-- <h1 class="entry-title display-4 display-2-lg mt-2">
+                <h1 class="entry-title display-4 display-2-lg mt-2">
                   {{ article.data.attributes.name }}
-                </h1> -->
+                </h1>
                 <!-- atribute -->
                 <!-- <Post_meta/> -->
               </div>
@@ -40,7 +56,7 @@
               <!-- post content -->
               <div class="post-content">
                 <!-- images -->
-                <!-- <figure class="image-wrapper ratio_single">
+                <figure class="image-wrapper ratio_single">
                   <nuxt-img 
                     class="i-amphtml-fill-content i-amphtml-replaced-content" 
                     :src="`${uploadpath}/${article.data.attributes.devimages}`"
@@ -50,8 +66,8 @@
                     data-hero=""
                   />
                   <figcaption>{{ article.data.attributes.name }}</figcaption>
-                </figure> -->
-                <!-- <p>{{ article.data.attributes.description }}</p> -->
+                </figure>
+                <p>{{ article.data.attributes.description }}</p>
               </div>
 
               <!-- footer post -->

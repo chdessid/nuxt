@@ -70,18 +70,20 @@ export default {
       { hid: 'gtag', src: '/js/vendor/gtag.js', type: 'text/javascript' ,defer: true},
       { hid: 'analytics', src: '/js/vendor/analytics.js', type: 'text/javascript',defer: true},
       { hid: 'gtaganalytics', src: 'https://www.googletagmanager.com/gtag/js?id=G-NY3Q6MBPT1', type: 'text/javascript',defer: true},
-      { hid: 'tagmanagerhead', src: '/js/vendor/tagmanagerhead.js', type: 'text/javascript',defer: true},
-      { hid: 'tagmanagerbody', src: '/js/vendor/tagmanagerbody.js', type: 'text/javascript',defer: true},
-      { hid: 'bootstrap', src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js', type: 'text/javascript'},
-      { hid: 'jquery', src: 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', type: 'text/javascript'},
+      // { hid: 'tagmanagerhead', src: '/js/vendor/tagmanagerhead.js', type: 'text/javascript',defer: true},
+      // { hid: 'tagmanagerbody', src: '/js/vendor/tagmanagerbody.js', type: 'text/javascript',defer: true},
+      // { hid: 'bootstrap', src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js', type: 'text/javascript'},
+      // { hid: 'jquery', src: 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', type: 'text/javascript'},
 
     ]
   },
 
+
   css: [
     '@/assets/css/theme.css',
+
   ],
-  plugins: ['~plugins/axios'
+  plugins: ['~plugins/axios', 
    
   ],
   components: true,
@@ -126,7 +128,7 @@ export default {
         },
       },
     ],
-    
+    'nuxt-ssr-cache',
   ],
   // axios: {
   //   baseURL: process.env.STRAPI_URL || 'https://api.jaridaa.com/api'
@@ -155,13 +157,24 @@ export default {
       },
     },
   },
+
+  
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'https://api.jaridaa.com/graphql',
-      }
-    }
+        httpEndpoint: "https://api.jaridaa.com/graphql",
+        loadingKey: 'loading',
+        fetchPolicy: 'cache-and-network',
+      },
+      
+       
+    
+  },},
+
+  env: {
+    strapiBaseUri:  "https://api.jaridaa.com/api"
   },
+
 
 
   image: {
@@ -207,5 +220,35 @@ export default {
     extend (config, ctx) {
       config.resolve.symlinks = false
     },
-  }
+  },
+  cache: {
+    // if you're serving multiple host names (with differing
+    // results) from the same server, set this option to true.
+    // (cache keys will be prefixed by your host name)
+    // if your server is behind a reverse-proxy, please use
+    // express or whatever else that uses 'X-Forwarded-Host'
+    // header field to provide req.hostname (actual host name)
+    useHostPrefix: false,
+    pages: [
+      /^\/$/
+    ],
+    
+    key(route, context) {
+      // custom function to return cache key, when used previous
+      // properties (useHostPrefix, pages) are ignored. return 
+      // falsy value to bypass the cache
+    },
+
+    store: {
+      type: 'memory',
+
+      // maximum number of pages to store in memory
+      // if limit is reached, least recently used page
+      // is removed.
+      max: 100,
+
+      // number of seconds to store this page in cache
+      ttl: 60,
+    },
+  },
 }
