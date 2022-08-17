@@ -26,7 +26,8 @@
               <!--end left post-->
 
               <!-- START LATEST POSTS -->
-              <div class="row">
+            <div class="block-area">
+                <div class="row">
                 <div v-for="article in articles.data" class="col-md-4">
                   <div class="pop-box border-bottom-last-0 first-pt-0" >
                     <div class="pop-img">
@@ -62,6 +63,7 @@
                   </div>
                 </div>
               </div>
+            </div>
        
               <!-- END LATEST POSTS -->
             </div>
