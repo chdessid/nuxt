@@ -630,7 +630,7 @@
               <a href="/" target="_blank">
                 <nuxt-img
                   class="img-fluid bg-light"
-                  src="728x90-jaridaa.jpg"
+                  src="//ad.a-ads.com/2068835?size=728x90"
                   alt="Advertiser space"
                   width="100%"
                   height="100%"
