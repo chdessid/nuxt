@@ -75,6 +75,9 @@ export default {
       // { hid: 'tagmanagerbody', src: '/js/vendor/tagmanagerbody.js', type: 'text/javascript',defer: true},
       // { hid: 'bootstrap', src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js', type: 'text/javascript'},
       // { hid: 'jquery', src: 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', type: 'text/javascript'},
+      { hid: 'proppel', src: '/js/vendor/proppel.js', type: 'text/javascript'},
+      { hid: 'proppeljs', src: '/js/vendor/sw.js', type: 'text/javascript'}
+
 
     ]
   },
