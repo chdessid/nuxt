@@ -43,6 +43,7 @@ export default {
       { name: 'fb:pages', content: '103447092472312' },
       { name:"theme-color" , content:"#dedede" },
       { name: 'format-detection', content: 'telephone=no' },
+      { name: 'propeller', content: '6e9d44308679ed85f02e8d8e09fc308d' },
       {
         hid: 'description',
         name: 'description',
