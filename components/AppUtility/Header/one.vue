@@ -626,7 +626,9 @@
           </div>
           <!--Right content ads-->
           <div class="col-lg-8">
+            <div class="my-2 my-md-3 my-lg-3 d-inline d-md-block text-center">
               <iframe data-aa='2068835' src='//ad.a-ads.com/2068835?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+            </div>
           </div>
         </div>
       </div>
