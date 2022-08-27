@@ -36,12 +36,12 @@ export default {
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@jarnews' },
       { name: 'twitter:title', content: 'Jaridaa Articles News: Breaking News | Latest News Today' },
-      { name: 'twitter:title', content: '	Stay informed and read the latest news today from Jaridaa News, the definitive source for independent journalism from every corner of the globe.' },
+      { name: 'twitter:description', content: '	Stay informed and read the latest news today from Jaridaa News, the definitive source for independent journalism from every corner of the globe.' },
       { name: 'twitter:image', content: 'https://jaridaa.com/og/img.png' },
       { name: 'twitter:url', content: 'https://jaridaa.com' },
       { name: 'fb:app_id', content: '1037927353575529' },
       { name: 'fb:pages', content: '103447092472312' },
-      { name:"theme-color" , content:"#dedede" },
+      { name: "theme-color" , content:"#dedede" },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'propeller', content: '6e9d44308679ed85f02e8d8e09fc308d' },
       {
@@ -200,7 +200,7 @@ export default {
   meta: {
     charset: 'utf-8',
     title: 'Jaridaa News',
-    author: 'ESD SOL LDA ',
+    author: 'jaridaa.com',
     lang: 'en',
     theme_color:'#dedede',
     description : 'Jaridaa.com provides latest news from Hyderabad, Telangana, India, Gulf and around the World. Get breaking news alerts from South India',

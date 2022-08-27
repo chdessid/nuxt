@@ -1,4 +1,5 @@
 <template>
+
   <body class="bg-repeat font-family">
     <!--Skippy-->
     <a id="skippy" class="visually-hidden-focusable" href="#content">
@@ -17,20 +18,15 @@
             <!--breadcrumb-->
             <div class="col-md-8">
               <nav aria-label="breadcrumb">
-                <ol
-                  class="breadcrumb u-breadcrumb pt-3 px-0 mb-0 bg-transparent small"
-                >
+                <ol class="breadcrumb u-breadcrumb pt-3 px-0 mb-0 bg-transparent small">
                   <li class="breadcrumb-item">
                     <a href="/">Home</a>
                   </li>
                   <!-- <li class="breadcrumb-item">
                     <a href="../category/category.html">To Insert Category Later</a>
                   </li> -->
-           
-                  <li
-                    class="breadcrumb-item active d-none d-md-block"
-                    aria-current="page"
-                  >
+
+                  <li class="breadcrumb-item active d-none d-md-block" aria-current="page">
                     {{ article.data.attributes.name }}
                   </li>
                 </ol>
@@ -53,16 +49,9 @@
               <div class="post-content">
                 <!-- images -->
                 <figure class="image-wrapper ratio_single">
-                  <img
-                    class="i-amphtml-fill-content i-amphtml-replaced-content"
-                    :src="`${uploadpath}/${article.data.attributes.devimages}`"
-                    :alt="`${article.data.attributes.slug}`"
-                    width="100%"
-                    height="100%"
-                    data-hero-candidate=""
-                    data-hero=""
-                    @error="setFallbackImageUrl"
-                  />
+                  <img class="i-amphtml-fill-content i-amphtml-replaced-content"
+                    :src="`${uploadpath}/${article.data.attributes.devimages}`" :alt="`${article.data.attributes.slug}`"
+                    width="100%" height="100%" data-hero-candidate="" data-hero="" @error="setFallbackImageUrl" />
                   <figcaption>{{ article.data.attributes.name }}</figcaption>
                 </figure>
                 <p>{{ article.data.attributes.description }}</p>
@@ -139,7 +128,33 @@ export default {
       event.target.src = require(`~/assets/img/placeholder-jaridaa.png`);
     },
   },
+  head() {
+    let article = this.article;
+
+    return {
+      title: `${article.data.attributes.name} | Jaridaa.com`,
+      meta: [{
+        hid: `iOSUrl`,
+        property: 'al:ios:url',
+        content: `https://jaridaa.com/post/${article.data.id}`
+      },
+
+      {
+        hid: `description`,
+        name: 'description',
+        content: `${article.data.attributes.description}`
+      },
+      { name: 'twitter:url', content: `https://jaridaa.com/post/${article.data.id}` },
+      { name: 'twitter:title', content: `${article.data.attributes.name} | Jaridaa.com` },
+      { name: 'twitter:description', content: `${article.data.attributes.description}` },
+      { name: 'twitter:image', content: 'https://jaridaa.com/og/img.png' },
+
+
+      ]
+    }
+  }
 };
 </script>
 
-<style></style>
+<style>
+</style>
